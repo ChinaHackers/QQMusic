@@ -8,6 +8,17 @@
 
 import UIKit
 
+/// 动画类型
+///
+/// - Rotation: 旋转
+/// - Transition: 渐变
+/// - Scale: 比例
+enum AnimationType {
+    case Rotation
+    case Transition
+    case Scale
+}
+
 class QQMusicCell: UITableViewCell {
     
     
@@ -42,6 +53,34 @@ class QQMusicCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+        
+    }
+    
+    
+    /// 提供一个方法实现动画
+    ///
+    /// - Parameter type: 动画类型
+    func aniation(type: AnimationType) -> () {
+        
+        if type == .Rotation {
+            // 防止动画调用多次,首先移除动画
+            self.layer.removeAnimation(forKey: "rotation")
+            let animation = CAKeyframeAnimation(keyPath: "transform.rotation.z")
+            animation.values = [-1/6 * M_PI, 0, 1/6 * M_PI, 0]
+            animation.duration = 0.2
+            animation.repeatCount = 3
+            self.layer.add(animation, forKey: "rotation")
+        }
+        if type == .Scale {
+            // 防止动画调用多次,首先移除动画
+            self.layer.removeAnimation(forKey: "scale")
+            let animation = CAKeyframeAnimation(keyPath: "transform.scale.x")
+            animation.values = [0.5, 1, 0.5, 1]
+            animation.duration = 0.2
+            animation.repeatCount = 2
+            self.layer.add(animation, forKey: "scale")
+            
+        }
         
     }
 
