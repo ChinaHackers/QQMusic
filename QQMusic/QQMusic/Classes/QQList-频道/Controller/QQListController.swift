@@ -69,7 +69,6 @@ extension QQListController {
         
         print("正在播放\(model.name)")
         
-        
         QQMusicOperationTool.shareInstance.playMusic(musicM: model)
         
         
@@ -110,9 +109,9 @@ extension QQListController {
         tableView.register(UINib(nibName: "QQMusicCell", bundle: nil), forCellReuseIdentifier: identifier)
     }
     // 设置状态栏风格
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+//    override var preferredStatusBarStyle: UIStatusBarStyle {
+//        return .lightContent
+//    }
     
 }
 
