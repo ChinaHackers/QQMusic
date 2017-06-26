@@ -23,7 +23,6 @@ class QQMusicCell: UITableViewCell {
     
     
     // MARK: -控件属性
-    
     @IBOutlet weak var singerIconImageView: UIImageView!    // 歌手头像
     @IBOutlet weak var songNameLabel: UILabel!              // 歌曲名称
     @IBOutlet weak var singerNameLabel: UILabel!            // 歌手名称

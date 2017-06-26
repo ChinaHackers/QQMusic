@@ -45,7 +45,7 @@ class QQListController: UITableViewController {
 }
 
 
-// MARK: - Table view data source \   Table view dele gate
+// MARK: - Table view data source \ Table view dele gate
 extension QQListController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,7 +73,6 @@ extension QQListController {
         
         QQMusicOperationTool.shareInstance.playMusic(musicM: model)
         
-        
         // 通过storyboard 里面标识符, 跳转控制器
         self.performSegue(withIdentifier: "listToDetail", sender: nil)
         
@@ -91,9 +90,6 @@ extension QQListController {
         }
     }
 
-    
-    
-    
 }
 
 // MARK: - 配置UI界面
@@ -110,19 +106,6 @@ extension QQListController {
         tableView.backgroundView = UIImageView(image: UIImage(named: "QQListBack.jpg"))
         tableView.register(UINib(nibName: "QQMusicCell", bundle: nil), forCellReuseIdentifier: identifier)
     }
-    // 设置状态栏风格
-//    override var preferredStatusBarStyle: UIStatusBarStyle {
-//        return .lightContent
-//    }
-    
 }
-
-
-
-
-
-
-
-
 
 

@@ -50,8 +50,8 @@
                                             <constraint firstAttribute="width" secondItem="ML9-e7-jrx" secondAttribute="height" multiplier="1:1" id="XWc-aP-axU"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYX-OS-feN">
-                                        <rect key="frame" x="166" y="355" width="42" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYX-OS-feN" customClass="QQLrcLabel" customModule="QQMusic" customModuleProvider="target">
+                                        <rect key="frame" x="166" y="362" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -71,7 +71,7 @@
                                     <constraint firstItem="DRT-hN-AmO" firstAttribute="top" secondItem="wVb-eV-GTc" secondAttribute="top" id="SLT-XG-qVC"/>
                                     <constraint firstItem="s1q-EK-fV8" firstAttribute="centerY" secondItem="wVb-eV-GTc" secondAttribute="centerY" id="dPZ-i0-1ys"/>
                                     <constraint firstItem="s1q-EK-fV8" firstAttribute="centerX" secondItem="wVb-eV-GTc" secondAttribute="centerX" id="djM-ZZ-6Ey"/>
-                                    <constraint firstItem="iYX-OS-feN" firstAttribute="top" secondItem="ML9-e7-jrx" secondAttribute="bottom" constant="18" id="oX2-Ch-CxT"/>
+                                    <constraint firstItem="iYX-OS-feN" firstAttribute="top" secondItem="ML9-e7-jrx" secondAttribute="bottom" constant="25" id="oX2-Ch-CxT"/>
                                     <constraint firstItem="ML9-e7-jrx" firstAttribute="centerY" secondItem="wVb-eV-GTc" secondAttribute="centerY" id="pkN-s2-XZ2"/>
                                 </constraints>
                             </view>
@@ -236,7 +236,7 @@
                         <outlet property="RoundBackground" destination="ML9-e7-jrx" id="RwT-s7-HlX"/>
                         <outlet property="backImageView" destination="Ao6-bn-i1l" id="Pbt-WW-Wdd"/>
                         <outlet property="costTimeLabel" destination="sLl-29-yr7" id="YEs-ww-k8y"/>
-                        <outlet property="lrcLabel" destination="iYX-OS-feN" id="JvS-gl-hLO"/>
+                        <outlet property="lrcLabel" destination="iYX-OS-feN" id="RdP-hA-vFA"/>
                         <outlet property="playOrPauseBtn" destination="qmD-Yk-L21" id="fT4-6G-Z1E"/>
                         <outlet property="progressSlider" destination="kWR-pY-LGB" id="Bsw-vb-kDR"/>
                         <outlet property="scrollView" destination="DRT-hN-AmO" id="zo3-Vl-Ail"/>

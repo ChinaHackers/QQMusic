@@ -43,7 +43,7 @@ class QQDetailController: UIViewController {
 // ===========================
     
     /// 歌词label
-    @IBOutlet weak var lrcLabel: UILabel!
+    @IBOutlet weak var lrcLabel: QQLrcLabel!
     
     /// 进度条
     @IBOutlet weak var progressSlider: UISlider!
@@ -55,18 +55,20 @@ class QQDetailController: UIViewController {
     @IBOutlet weak var playOrPauseBtn: UIButton!
 
     
-    // 负责更新很多次的timer
+    /// 负责更新很多次的timer
     var timer: Timer?
-    
+   
+    /// 负责 更新歌词 的 屏幕刷新率定时器
+    var updateLrcLink: CADisplayLink?
     
     
     // MARK: - 懒加载
-    /// 歌词View
-    fileprivate lazy var lrcView: UIView = {[weak self] in
-        let lrcView = UIView(frame: (self?.scrollView.bounds)!)
-        lrcView.backgroundColor = .clear
-        lrcView.frame.origin.x = screenW // 使得歌词View默认在屏幕之外
-        return lrcView
+    /// 歌词视图控制器
+    fileprivate lazy var lrcVC: QQLrcTableVC = {
+        let lrcVC = QQLrcTableVC()
+        lrcVC.tableView.backgroundColor = .clear
+        lrcVC.tableView.frame.origin.x = screenW        // 使得歌词View默认在屏幕之外
+        return lrcVC
     }()
     
     // MARK: - 系统回调函数
@@ -82,6 +84,7 @@ class QQDetailController: UIViewController {
         
         UpdateOnce()
         addTimer()
+        addLink()
     }
     
     // 视图即将消失、被覆盖或是隐藏时调用
@@ -89,6 +92,7 @@ class QQDetailController: UIViewController {
         super.viewWillDisappear(animated)
         
         removeTimer()
+        removeLink()
     }
     
     // MARK: - 按钮点击事件
@@ -97,19 +101,15 @@ class QQDetailController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
     /// 播放或者暂停
     @IBAction func playOrPause(sender: UIButton) {
         
         sender.isSelected = !sender.isSelected //按钮状态取反
-        
         if sender.isSelected { // 播放
-            
             QQMusicOperationTool.shareInstance.playCurrentMusic()
             resumeRotationAnimation()
             
         }else {                // 暂停
-            
             QQMusicOperationTool.shareInstance.pauseCurrentMusic()
             pauseRotationAnimation()
         }
@@ -132,19 +132,24 @@ class QQDetailController: UIViewController {
         // 2.切换一次更新界面
         UpdateOnce()
     }
+}
 
-    // MARK: - 自定义方法
+
+// MARK: - 自定义方法
+
+extension QQDetailController {
+    
     /// 切换歌曲时, 需要更新 1 次的操作
-    private func UpdateOnce() {
+    fileprivate func UpdateOnce() {
         
         // 创建音乐信息模型对象
         let musicMessageModel = QQMusicOperationTool.shareInstance.getMusicMessageModel()
         
-        
+        // 校验
         guard let musicM = musicMessageModel.musicM else {return}
-        
         guard musicM.icon != nil else { return }
-    
+        
+        // 赋值
         backImageView.image = UIImage(named: (musicM.icon)!)
         RoundBackground.image = UIImage(named: (musicM.icon)!)
         songNameLabel.text = musicM.name
@@ -152,6 +157,14 @@ class QQDetailController: UIViewController {
         
         // 212.0988 -> 04:56
         totalTimeLabel.text = QQTimeTool.getFormatTime(timeInterval: musicMessageModel.totalTime)
+        
+        
+        // 切换最新的歌词
+        let lrcMs = QQMusicDataTool.getLrcModels(lrcName: musicM.lrcname)
+        
+        lrcVC.lrcModels = lrcMs
+        
+        print(lrcMs)
         
         addRotationAimation()
         
@@ -163,15 +176,12 @@ class QQDetailController: UIViewController {
         
         
     }
-
-
+    
+    
     /// 切换歌曲时, 需要更新 N 次的操作
     @objc private func Update_N_Times() {
-
-//        lrcLabel.text = ""
         
         let musicMessageM = QQMusicOperationTool.shareInstance.getMusicMessageModel()
-        
         
         // 进度条值 = 已播放时间 / 总时长
         progressSlider.value = Float(musicMessageM.costTime / musicMessageM.totalTime)
@@ -185,7 +195,7 @@ class QQDetailController: UIViewController {
     
     
     /// 执行多次更新-添加定时器
-    private func addTimer() {
+    fileprivate func addTimer() {
         
         // timeInterval: 时间间隔
         // repeats: 是否重复
@@ -196,11 +206,81 @@ class QQDetailController: UIViewController {
     }
     
     /// 移除定时器
-    private func removeTimer() {
+    fileprivate func removeTimer() {
         timer?.invalidate()
         timer = nil
     }
+    
+    
+    
+    /// 添加屏幕刷新率定时器
+    fileprivate func addLink() {
+        
+        updateLrcLink = CADisplayLink(target: self, selector: #selector(updateLrc))
+        
+        // 将屏幕刷新率定时器加入运行循环
+        updateLrcLink?.add(to: .current, forMode: .commonModes)
+        
+    }
+    /// 移除屏幕刷新率定时器
+    fileprivate func removeLink() {
+        updateLrcLink?.invalidate()
+        updateLrcLink = nil
+    }
+    
+    
+    /// 更新歌词
+    @objc private func updateLrc() {
+        
+        // 取出模型
+        let musicMessageM = QQMusicOperationTool.shareInstance.getMusicMessageModel()
+        
+        // 获取歌词
+        
+        /// 当前时间
+        let time = musicMessageM.costTime
+        
+        // 获取歌词数组
+        let lrcMs = lrcVC.lrcModels
+        
+        let rowLrcModel = QQMusicDataTool.getCurrentLrcM(currentTime: time, lrcModels: lrcMs)
+        
+        /// 歌词模型
+        let lrcModel = rowLrcModel.lrcM
+        
+        // 赋值
+        lrcLabel.text = lrcModel?.lrcContent
+        
+        //MARK: 设置歌词变色的进度
+/*
+        lrc格式的歌词文件无法实现根据节奏设置变色进度,这里取平均值:
+        每一句歌词在每句歌词显示的总时间内,匀速的变色
+        
+        因为歌词变色进度也是需要实时更新的,所以也是需要在控制器下的定时器方法内执行的,这里就用到了当当前歌词索引为最后一条时,自定义的一条虚拟歌词对象
+*/
+        
+        guard lrcModel != nil else { return }
+        
+        // 当前总时间: (下一句的起始时间 - 当前句的 起始时间)
+        let time2 = lrcModel!.endTime - lrcModel!.beginTime
+        
+        // 平均速度进行计算 : (当前播放时间 - 当前句 起始时间) / 当前句总时间
+        lrcLabel.radio =  CGFloat((time - lrcModel!.beginTime) / time2)
+        
+        // 控制器的进度 = 进度Label的进度
+        lrcVC.progress = lrcLabel.radio
+        
+        // 滚动歌词
+        // 获取滚到哪一行
+        let row = rowLrcModel.row
+        
+        // 赋值lrcVC, 让它来负责具体怎么滚
+        lrcVC.scrollRow = row
+        
+    }
+    
 }
+
 
 
 // MARK: - 配置UI界面
@@ -221,8 +301,8 @@ extension QQDetailController {
     /// 配置ScrollView
     private func configScrollView() {
         
-        // 添加歌词View到scrollView中
-        scrollView.addSubview(lrcView)
+        // 添加 歌词视图控制器 的 表格视图 到 scrollView 中
+        scrollView.addSubview(lrcVC.tableView)
         
         // 设置scrollView相关属性
         scrollView.delegate = self

@@ -24,4 +24,25 @@ class QQTimeTool: NSObject {
         
         return String(format: "%02d: %02d", min, sec)
     }
+    
+    /// 根据 字符串 转换成 秒数
+    ///
+    /// - Parameter formatTime: 格式化字符串
+    /// - Returns: 秒数
+    class func getTimeInterval(formatTime: String) -> TimeInterval {
+        
+        // 00:00.91
+        
+        //components(separatedBy:): 方法是将字符串根据指定的字符串参数进行分割，并将分别的内容转换为一个数组
+        let minSec = formatTime.components(separatedBy: ":")
+        
+        if minSec.count != 2 {
+            return 0
+        }
+        
+        let min = TimeInterval(minSec[0]) ?? 0.0
+        let sec = TimeInterval(minSec[1]) ?? 0.0
+        
+        return min * 60.0 + sec
+    }
 }

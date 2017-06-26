@@ -39,6 +39,4 @@ class QQMusicModel: NSObject {
     
     
     override func setValue(_ value: Any?, forUndefinedKey key: String) {}
-
-
 }
