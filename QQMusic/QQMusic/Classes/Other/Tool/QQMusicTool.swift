@@ -52,7 +52,8 @@ class QQMusicTool: NSObject {
     }
     
     
-    func pauseMusic() -> () {
+    /// 类方法: 暂停音乐
+    func pauseMusic() {
         player?.pause()
     }
     

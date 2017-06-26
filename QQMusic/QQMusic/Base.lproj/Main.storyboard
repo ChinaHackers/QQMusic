@@ -36,13 +36,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVb-eV-GTc">
                                 <rect key="frame" x="0.0" y="120" width="375" height="419"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cm2_efc_knob_trough" translatesAutoresizingMaskIntoConstraints="NO" id="fYS-QD-uQS">
-                                        <rect key="frame" x="48" y="70" width="280" height="280"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-EK-fV8">
+                                        <rect key="frame" x="47" y="69" width="280" height="280"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="0.099020761986301373" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="280" id="J7c-sH-GVi"/>
-                                            <constraint firstAttribute="height" constant="280" id="v4i-ML-61P"/>
+                                            <constraint firstAttribute="width" constant="280" id="ESJ-gv-0ss"/>
+                                            <constraint firstAttribute="height" constant="280" id="Ow3-i5-ind"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jay.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ML9-e7-jrx">
                                         <rect key="frame" x="60" y="82" width="255" height="255"/>
                                         <constraints>
@@ -68,10 +69,10 @@
                                     <constraint firstItem="DRT-hN-AmO" firstAttribute="leading" secondItem="wVb-eV-GTc" secondAttribute="leading" id="Lxm-Gi-wRC"/>
                                     <constraint firstItem="ML9-e7-jrx" firstAttribute="centerX" secondItem="wVb-eV-GTc" secondAttribute="centerX" id="MgK-yH-oeJ"/>
                                     <constraint firstItem="DRT-hN-AmO" firstAttribute="top" secondItem="wVb-eV-GTc" secondAttribute="top" id="SLT-XG-qVC"/>
-                                    <constraint firstItem="fYS-QD-uQS" firstAttribute="centerX" secondItem="wVb-eV-GTc" secondAttribute="centerX" id="fiq-XU-xdM"/>
+                                    <constraint firstItem="s1q-EK-fV8" firstAttribute="centerY" secondItem="wVb-eV-GTc" secondAttribute="centerY" id="dPZ-i0-1ys"/>
+                                    <constraint firstItem="s1q-EK-fV8" firstAttribute="centerX" secondItem="wVb-eV-GTc" secondAttribute="centerX" id="djM-ZZ-6Ey"/>
                                     <constraint firstItem="iYX-OS-feN" firstAttribute="top" secondItem="ML9-e7-jrx" secondAttribute="bottom" constant="18" id="oX2-Ch-CxT"/>
                                     <constraint firstItem="ML9-e7-jrx" firstAttribute="centerY" secondItem="wVb-eV-GTc" secondAttribute="centerY" id="pkN-s2-XZ2"/>
-                                    <constraint firstItem="fYS-QD-uQS" firstAttribute="centerY" secondItem="wVb-eV-GTc" secondAttribute="centerY" id="rzs-GK-uzR"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRW-hZ-SJF">
@@ -85,14 +86,23 @@
                                         </constraints>
                                         <state key="normal" image="player_btn_play_normal"/>
                                         <state key="selected" image="player_btn_pause_normal"/>
+                                        <connections>
+                                            <action selector="playOrPauseWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9MR-xY-69x"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qef-If-ElE">
                                         <rect key="frame" x="42" y="46" width="64" height="64"/>
                                         <state key="normal" image="player_btn_pre_normal"/>
+                                        <connections>
+                                            <action selector="PreviousMusic" destination="BYZ-38-t0r" eventType="touchUpInside" id="dx4-Nf-q4b"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5KN-2G-5EQ">
                                         <rect key="frame" x="270" y="46" width="64" height="64"/>
                                         <state key="normal" image="player_btn_next_normal"/>
+                                        <connections>
+                                            <action selector="nextMusic" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tst-7T-I0i"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLl-29-yr7">
                                         <rect key="frame" x="10" y="8" width="45" height="15"/>
@@ -175,6 +185,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRQ-VS-nmf">
                                         <rect key="frame" x="8" y="30" width="40" height="40"/>
                                         <state key="normal" image="miniplayer_btn_playlist_close_b"/>
+                                        <connections>
+                                            <action selector="closeButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cw-4u-yEE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -219,11 +232,16 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="HaloImageView" destination="fYS-QD-uQS" id="p6b-lP-a4j"/>
-                        <outlet property="backImageView" destination="ML9-e7-jrx" id="wyM-iT-Gei"/>
+                        <outlet property="HaloView" destination="s1q-EK-fV8" id="Q8e-Yd-3am"/>
+                        <outlet property="RoundBackground" destination="ML9-e7-jrx" id="RwT-s7-HlX"/>
+                        <outlet property="backImageView" destination="Ao6-bn-i1l" id="Pbt-WW-Wdd"/>
+                        <outlet property="costTimeLabel" destination="sLl-29-yr7" id="YEs-ww-k8y"/>
                         <outlet property="lrcLabel" destination="iYX-OS-feN" id="JvS-gl-hLO"/>
                         <outlet property="progressSlider" destination="kWR-pY-LGB" id="Bsw-vb-kDR"/>
                         <outlet property="scrollView" destination="DRT-hN-AmO" id="zo3-Vl-Ail"/>
+                        <outlet property="singerNameLabel" destination="phb-RH-mLp" id="ng0-Cm-U5E"/>
+                        <outlet property="songNameLabel" destination="t1V-Gg-Shw" id="3q8-4I-PKH"/>
+                        <outlet property="totalTimeLabel" destination="BDZ-kz-FPD" id="i9g-dO-pjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -246,7 +264,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="Xfq-fK-dp6"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="listToDetail" id="xGD-6m-vRJ"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="listToDetail" id="xGD-6m-vRJ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l4c-kV-k3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -273,7 +291,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cm2_efc_knob_trough" width="106" height="106"/>
         <image name="jay.jpg" width="350" height="350"/>
         <image name="main_tab_more" width="45" height="45"/>
         <image name="miniplayer_btn_playlist_close_b" width="40" height="40"/>

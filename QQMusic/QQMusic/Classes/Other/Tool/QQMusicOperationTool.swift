@@ -16,68 +16,80 @@ import UIKit
 class QQMusicOperationTool: NSObject {
 
     
-    /*
+    /// 音乐信息模型对象
     private var musicModel = QQMusicMessageModel()
     
+    
+    /// 获取音乐信息模型
+    ///
+    /// - Returns: QQMusicMessageModel
     func getMusicMessageModel() -> QQMusicMessageModel {
         
         // 在这里, 保持, 数据的最新状态, 就可以
+       
         // 当前正在播放的歌曲信息
         musicModel.musicM = musicMs[currentPlayIndex]
         
+        // 已经播放的时间
         musicModel.costTime = (tool.player?.currentTime) ?? 0
-        print(musicModel.costTime)
+        
+        print("已经播放的时间为: \(musicModel.costTime)")
+        
+        // 总时长
         musicModel.totalTime = (tool.player?.duration) ?? 0
         
-        musicModel.isPlaying = (tool.player?.playing) ?? false
-        
+        // 播放状态
+        musicModel.isPlaying = (tool.player?.isPlaying) ?? false
         
         return musicModel
-        
     }
     
+    
+    /// 当前索引
     var currentPlayIndex = -1 {
-        didSet {
-            if currentPlayIndex < 0
-            {
+        didSet { //属性监视器  
+            // 循环播放
+            if currentPlayIndex < 0 {
                 currentPlayIndex = (musicMs.count) - 1
             }
-            if currentPlayIndex > (musicMs.count) - 1
-            {
+            if currentPlayIndex > (musicMs.count) - 1 {
                 currentPlayIndex = 0
             }
         }
    
     }
     
- */
     
     /// 单例
     static let shareInstance = QQMusicOperationTool()
     
+    /// 音乐工具类对象
     let tool = QQMusicTool()
     
     
-    // 播放的音乐列表
+    /// 播放的音乐列表模型对象
     var musicMs: [QQMusicModel] = [QQMusicModel]()
     
-    func playMusic(musicM: QQMusicModel) -> () {
+    func playMusic(musicM: QQMusicModel) {
         
         // 播放数据模型对应的音乐
         tool.playMusic(musicName: musicM.filename)
-//        currentPlayIndex = musicMs.indexOf(musicM)!
+      
+        // 当前索引 = 模型在数组中的索引
+        currentPlayIndex = musicMs.index(of: musicM)!
     }
     
-    /*
+    /// 播放
     func playCurrentMusic() -> () {
         // 取出需要播放的音乐数据模型
         let model = musicMs[currentPlayIndex]
         
         // 播放音乐模型
-        playMusic(model)
+        playMusic(musicM: model)
         
     }
     
+    /// 暂停
     func pauseCurrentMusic() -> () {
 
         // 根据音乐模型, 进行暂停
@@ -85,32 +97,32 @@ class QQMusicOperationTool: NSObject {
         
     }
     
-    
-    func nextMusic() -> () {
-        
+    /// 下一首
+    func nextMusic() {
+
         currentPlayIndex += 1
-        
+
         // 取出需要播放的音乐数据模型
         let model = musicMs[currentPlayIndex]
-        
+
         // 根据音乐模型, 进行播放
-        playMusic(model)
+        playMusic(musicM: model)
         
     }
     
-    
-    func preMusic() -> () {
+    /// 上一首
+    func PreviousMusic() -> () {
         
         currentPlayIndex -= 1
-        
+
         // 取出需要播放的音乐数据模型
         let model = musicMs[currentPlayIndex]
         
         // 根据音乐模型, 进行播放
-        playMusic(model)
+        playMusic(musicM: model)
         
     }
 
-   */
+   
     
 }

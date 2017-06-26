@@ -35,7 +35,9 @@ class QQListController: UITableViewController {
         // 取出数据
         QQMusicDataTool.getMusicModels { (models: [QQMusicModel]) in
             print(models)
+            
             self.musicModels = models
+            QQMusicOperationTool.shareInstance.musicMs = models
         }
     }
 
