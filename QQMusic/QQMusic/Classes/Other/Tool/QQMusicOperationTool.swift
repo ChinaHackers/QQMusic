@@ -79,7 +79,7 @@ class QQMusicOperationTool: NSObject {
         currentPlayIndex = musicMs.index(of: musicM)!
     }
     
-    /// 播放
+    /// 播放当前音乐
     func playCurrentMusic() -> () {
         // 取出需要播放的音乐数据模型
         let model = musicMs[currentPlayIndex]
@@ -89,7 +89,7 @@ class QQMusicOperationTool: NSObject {
         
     }
     
-    /// 暂停
+    /// 暂停当前音乐
     func pauseCurrentMusic() -> () {
 
         // 根据音乐模型, 进行暂停

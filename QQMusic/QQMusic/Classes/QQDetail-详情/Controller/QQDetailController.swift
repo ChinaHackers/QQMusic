@@ -51,6 +51,8 @@ class QQDetailController: UIViewController {
     /// 已经播放时长
     @IBOutlet weak var costTimeLabel: UILabel!
     
+    /// 播放\暂停按钮
+    @IBOutlet weak var playOrPauseBtn: UIButton!
 
     
     // 负责更新很多次的timer
@@ -89,7 +91,7 @@ class QQDetailController: UIViewController {
         removeTimer()
     }
     
-
+    // MARK: - 按钮点击事件
     /// 关闭按钮点击事件
     @IBAction func closeButton() {
         dismiss(animated: true, completion: nil)
@@ -131,6 +133,7 @@ class QQDetailController: UIViewController {
         UpdateOnce()
     }
 
+    // MARK: - 自定义方法
     /// 切换歌曲时, 需要更新 1 次的操作
     private func UpdateOnce() {
         
@@ -149,6 +152,16 @@ class QQDetailController: UIViewController {
         
         // 212.0988 -> 04:56
         totalTimeLabel.text = QQTimeTool.getFormatTime(timeInterval: musicMessageModel.totalTime)
+        
+        addRotationAimation()
+        
+        if musicMessageModel.isPlaying { // 如果正在播放, 恢复动画
+            resumeRotationAnimation()
+        }else {                         // 否则 暂停动画
+            pauseRotationAnimation()
+        }
+        
+        
     }
 
 
@@ -165,6 +178,9 @@ class QQDetailController: UIViewController {
         
         /** 已经播放时长 n*/
         costTimeLabel.text = QQTimeTool.getFormatTime(timeInterval: musicMessageM.costTime)
+        
+        // 播放按钮状态 等于 当前播放状态
+        playOrPauseBtn.isSelected = musicMessageM.isPlaying
     }
     
     
@@ -246,9 +262,12 @@ extension QQDetailController {
 // MARK: - 遵守 UIScrollViewDelegate 协议
 extension QQDetailController: UIScrollViewDelegate {
     
-    // MARK: 做动画
-    // scrollView滚动的时候就会调用。
-    // 准确的说是用户拖动导致 contentOffset 改变的时候就会调用
+    // MARK: 以下都为动画处理
+    
+    // 当用户拖动 ScrollView 导致 contentOffset 改变的时候就会调用
+    /// 目的: 监听滚动视图的滚动, 做透明动画效果
+    ///
+    /// - Parameter scrollView: 滚动视图
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         /*
@@ -268,6 +287,26 @@ extension QQDetailController: UIScrollViewDelegate {
         HaloView.alpha = radio
     }
     
+    
+    /// 添加旋转动画
+    fileprivate func addRotationAimation() {
+        
+        // 防止动画添加多次, 首先移除
+        RoundBackground.layer.removeAnimation(forKey: "rotation")
+        
+        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+        animation.fromValue = 0                 // 从0开始旋转
+        animation.toValue = M_PI * 2            // 旋转360度
+        animation.duration = 30                 // 旋转持续的时间
+        animation.isRemovedOnCompletion = false // 动画完成后是否删除
+        animation.repeatCount = MAXFLOAT        // 无限旋转
+        
+        // 添加动画
+        RoundBackground.layer.add(animation, forKey: "rotation")
+    }
+
+    
+    
     /// 暂停旋转动画
     fileprivate func pauseRotationAnimation() -> () {
         RoundBackground.layer.pauseAnimate()
@@ -277,9 +316,6 @@ extension QQDetailController: UIScrollViewDelegate {
     fileprivate func resumeRotationAnimation() -> () {
         RoundBackground.layer.resumeAnimate()
     }
-    
-
-    
     
 }
 

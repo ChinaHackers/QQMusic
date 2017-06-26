@@ -237,6 +237,7 @@
                         <outlet property="backImageView" destination="Ao6-bn-i1l" id="Pbt-WW-Wdd"/>
                         <outlet property="costTimeLabel" destination="sLl-29-yr7" id="YEs-ww-k8y"/>
                         <outlet property="lrcLabel" destination="iYX-OS-feN" id="JvS-gl-hLO"/>
+                        <outlet property="playOrPauseBtn" destination="qmD-Yk-L21" id="fT4-6G-Z1E"/>
                         <outlet property="progressSlider" destination="kWR-pY-LGB" id="Bsw-vb-kDR"/>
                         <outlet property="scrollView" destination="DRT-hN-AmO" id="zo3-Vl-Ail"/>
                         <outlet property="singerNameLabel" destination="phb-RH-mLp" id="ng0-Cm-U5E"/>
