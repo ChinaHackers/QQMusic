@@ -33,7 +33,7 @@ class QQMusicOperationTool: NSObject {
         // 已经播放的时间
         musicModel.costTime = (tool.player?.currentTime) ?? 0
         
-        print("已经播放的时间为: \(musicModel.costTime)")
+//        print("已经播放的时间为: \(musicModel.costTime)")
         
         // 总时长
         musicModel.totalTime = (tool.player?.duration) ?? 0
@@ -81,8 +81,11 @@ class QQMusicOperationTool: NSObject {
     
     /// 播放当前音乐
     func playCurrentMusic() -> () {
+        print(currentPlayIndex)
+        
         // 取出需要播放的音乐数据模型
         let model = musicMs[currentPlayIndex]
+        
         
         // 播放音乐模型
         playMusic(musicM: model)
@@ -122,7 +125,12 @@ class QQMusicOperationTool: NSObject {
         playMusic(musicM: model)
         
     }
-
-   
     
+    /// 寻找到正确的时间
+    ///
+    /// - Parameter time: 时间间隔
+    func seekToTime(_ time: TimeInterval) {
+         tool.seekToTime(time)
+    }
+ 
 }

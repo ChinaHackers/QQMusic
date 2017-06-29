@@ -70,6 +70,22 @@
 		6BCA4D1B1EFF663E0012446B /* QQMusicOperationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D181EFF663E0012446B /* QQMusicOperationTool.swift */; };
 		6BCA4D1C1EFF663E0012446B /* QQMusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D191EFF663E0012446B /* QQMusicTool.swift */; };
 		6BCA4D1D1EFF663E0012446B /* QQTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D1A1EFF663E0012446B /* QQTimeTool.swift */; };
+		6BE49B831F04CC830046CE6E /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE49B7B1F04CC830046CE6E /* ListViewCell.swift */; };
+		6BE49B841F04CC830046CE6E /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B7C1F04CC830046CE6E /* ListViewCell.xib */; };
+		6BE49B851F04CC830046CE6E /* miniPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE49B7D1F04CC830046CE6E /* miniPlayerCell.swift */; };
+		6BE49B861F04CC830046CE6E /* miniPlayerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B7E1F04CC830046CE6E /* miniPlayerCell.xib */; };
+		6BE49B871F04CC830046CE6E /* QQMusicTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE49B7F1F04CC830046CE6E /* QQMusicTabbarView.swift */; };
+		6BE49B881F04CC830046CE6E /* QQMusicTabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B801F04CC830046CE6E /* QQMusicTabbarView.xib */; };
+		6BE49B891F04CC830046CE6E /* songListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE49B811F04CC830046CE6E /* songListView.swift */; };
+		6BE49B8A1F04CC830046CE6E /* songListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B821F04CC830046CE6E /* songListView.xib */; };
+		6BE49B8D1F04CE5C0046CE6E /* 北京北京.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B8B1F04CE5C0046CE6E /* 北京北京.mp3 */; };
+		6BE49B8E1F04CE5C0046CE6E /* SeeYouAgain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B8C1F04CE5C0046CE6E /* SeeYouAgain.mp3 */; };
+		6BE49B911F04CE710046CE6E /* 北京北京.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B8F1F04CE710046CE6E /* 北京北京.lrc */; };
+		6BE49B921F04CE710046CE6E /* SeeYouAgain.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B901F04CE710046CE6E /* SeeYouAgain.lrc */; };
+		6BE49B971F04CEA80046CE6E /* 北京北京-唐伯虎_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B931F04CEA80046CE6E /* 北京北京-唐伯虎_icon.png */; };
+		6BE49B981F04CEA80046CE6E /* 北京北京-唐伯虎.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B941F04CEA80046CE6E /* 北京北京-唐伯虎.png */; };
+		6BE49B991F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B951F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg */; };
+		6BE49B9A1F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B961F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +154,22 @@
 		6BCA4D181EFF663E0012446B /* QQMusicOperationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicOperationTool.swift; sourceTree = "<group>"; };
 		6BCA4D191EFF663E0012446B /* QQMusicTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTool.swift; sourceTree = "<group>"; };
 		6BCA4D1A1EFF663E0012446B /* QQTimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQTimeTool.swift; sourceTree = "<group>"; };
+		6BE49B7B1F04CC830046CE6E /* ListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		6BE49B7C1F04CC830046CE6E /* ListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewCell.xib; sourceTree = "<group>"; };
+		6BE49B7D1F04CC830046CE6E /* miniPlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = miniPlayerCell.swift; sourceTree = "<group>"; };
+		6BE49B7E1F04CC830046CE6E /* miniPlayerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = miniPlayerCell.xib; sourceTree = "<group>"; };
+		6BE49B7F1F04CC830046CE6E /* QQMusicTabbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTabbarView.swift; sourceTree = "<group>"; };
+		6BE49B801F04CC830046CE6E /* QQMusicTabbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQMusicTabbarView.xib; sourceTree = "<group>"; };
+		6BE49B811F04CC830046CE6E /* songListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = songListView.swift; sourceTree = "<group>"; };
+		6BE49B821F04CC830046CE6E /* songListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = songListView.xib; sourceTree = "<group>"; };
+		6BE49B8B1F04CE5C0046CE6E /* 北京北京.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "北京北京.mp3"; sourceTree = "<group>"; };
+		6BE49B8C1F04CE5C0046CE6E /* SeeYouAgain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SeeYouAgain.mp3; sourceTree = "<group>"; };
+		6BE49B8F1F04CE710046CE6E /* 北京北京.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "北京北京.lrc"; sourceTree = "<group>"; };
+		6BE49B901F04CE710046CE6E /* SeeYouAgain.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SeeYouAgain.lrc; sourceTree = "<group>"; };
+		6BE49B931F04CEA80046CE6E /* 北京北京-唐伯虎_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "北京北京-唐伯虎_icon.png"; sourceTree = "<group>"; };
+		6BE49B941F04CEA80046CE6E /* 北京北京-唐伯虎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "北京北京-唐伯虎.png"; sourceTree = "<group>"; };
+		6BE49B951F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg"; sourceTree = "<group>"; };
+		6BE49B961F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wiz Khalifa,Charlie Puth - See You Again.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +215,7 @@
 		6B11A97D1EFEB09A00313D0E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6BE49B771F04CC830046CE6E /* QQMiniPlayer-迷你播放器 */,
 				6B11A9871EFEB09A00313D0E /* QQList-频道 */,
 				6B11A9831EFEB09A00313D0E /* QQDetail-详情 */,
 				6B11A97E1EFEB09A00313D0E /* Other */,
@@ -324,6 +357,10 @@
 		6B11A98E1EFEB42C00313D0E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6BE49B931F04CEA80046CE6E /* 北京北京-唐伯虎_icon.png */,
+				6BE49B941F04CEA80046CE6E /* 北京北京-唐伯虎.png */,
+				6BE49B951F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg */,
+				6BE49B961F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg */,
 				6B11A98F1EFEB42C00313D0E /* bb@2x.jpg */,
 				6B11A9901EFEB42C00313D0E /* bb_icon@2x.jpg */,
 				6B11A9911EFEB42C00313D0E /* dzq@2x.jpg */,
@@ -361,6 +398,8 @@
 				6B11A9AB1EFEB42C00313D0E /* 309769.lrc */,
 				6B11A9AC1EFEB42C00313D0E /* 339744.lrc */,
 				6B11A9AD1EFEB42C00313D0E /* 月半小夜曲.lrc */,
+				6BE49B8F1F04CE710046CE6E /* 北京北京.lrc */,
+				6BE49B901F04CE710046CE6E /* SeeYouAgain.lrc */,
 			);
 			path = Lrcs;
 			sourceTree = "<group>";
@@ -368,6 +407,8 @@
 		6B11A9AE1EFEB42C00313D0E /* MP3s */ = {
 			isa = PBXGroup;
 			children = (
+				6BE49B8B1F04CE5C0046CE6E /* 北京北京.mp3 */,
+				6BE49B8C1F04CE5C0046CE6E /* SeeYouAgain.mp3 */,
 				6B11A9AF1EFEB42C00313D0E /* 10405520.mp3 */,
 				6B11A9B01EFEB42C00313D0E /* 10736444.mp3 */,
 				6B11A9B11EFEB42C00313D0E /* 1201111234.mp3 */,
@@ -388,6 +429,45 @@
 				6B38994B1EFEBBF5004F1937 /* QQMusicDataTool.swift */,
 			);
 			path = DataTool;
+			sourceTree = "<group>";
+		};
+		6BE49B771F04CC830046CE6E /* QQMiniPlayer-迷你播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				6BE49B791F04CC830046CE6E /* Model */,
+				6BE49B7A1F04CC830046CE6E /* View */,
+				6BE49B781F04CC830046CE6E /* Controller */,
+			);
+			path = "QQMiniPlayer-迷你播放器";
+			sourceTree = "<group>";
+		};
+		6BE49B781F04CC830046CE6E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6BE49B791F04CC830046CE6E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BE49B7A1F04CC830046CE6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE49B7F1F04CC830046CE6E /* QQMusicTabbarView.swift */,
+				6BE49B801F04CC830046CE6E /* QQMusicTabbarView.xib */,
+				6BE49B7D1F04CC830046CE6E /* miniPlayerCell.swift */,
+				6BE49B7E1F04CC830046CE6E /* miniPlayerCell.xib */,
+				6BE49B811F04CC830046CE6E /* songListView.swift */,
+				6BE49B821F04CC830046CE6E /* songListView.xib */,
+				6BE49B7B1F04CC830046CE6E /* ListViewCell.swift */,
+				6BE49B7C1F04CC830046CE6E /* ListViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,19 +529,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE49B881F04CC830046CE6E /* QQMusicTabbarView.xib in Resources */,
 				6B11A9D51EFEB42C00313D0E /* 255319.lrc in Resources */,
 				6B11A9D01EFEB42C00313D0E /* 10736444.lrc in Resources */,
 				6B11A9DD1EFEB42C00313D0E /* 12309111.mp3 in Resources */,
+				6BE49B991F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg in Resources */,
 				6B11A9CA1EFEB42C00313D0E /* nanquan_icon@2x.jpg in Resources */,
 				6B11A9C41EFEB42C00313D0E /* jj_icon@2x.png in Resources */,
 				6B11A9DB1EFEB42C00313D0E /* 1201111234.mp3 in Resources */,
 				6B11A9E31EFEB42C00313D0E /* Musics.plist in Resources */,
 				6B11A9DA1EFEB42C00313D0E /* 10736444.mp3 in Resources */,
+				6BE49B841F04CC830046CE6E /* ListViewCell.xib in Resources */,
+				6BE49B8A1F04CC830046CE6E /* songListView.xib in Resources */,
 				6B11A9E41EFEB42C00313D0E /* QQListBack.jpg in Resources */,
 				6B11A9C21EFEB42C00313D0E /* jay_icon@2x.png in Resources */,
+				6BE49B8E1F04CE5C0046CE6E /* SeeYouAgain.mp3 in Resources */,
 				6B11A9DE1EFEB42C00313D0E /* 14945107.mp3 in Resources */,
 				6B11A9BC1EFEB42C00313D0E /* bb_icon@2x.jpg in Resources */,
 				6B11A9CF1EFEB42C00313D0E /* 10405520.lrc in Resources */,
+				6BE49B8D1F04CE5C0046CE6E /* 北京北京.mp3 in Resources */,
 				6B11A9C61EFEB42C00313D0E /* kzxd_icon@2x.jpg in Resources */,
 				6B11A9C11EFEB42C00313D0E /* jay@2x.jpg in Resources */,
 				6B11A9761EFEAF2400313D0E /* LaunchScreen.storyboard in Resources */,
@@ -469,8 +555,11 @@
 				6B11A9E01EFEB42C00313D0E /* 255319.mp3 in Resources */,
 				6B11A9CB1EFEB42C00313D0E /* wf@2x.jpg in Resources */,
 				6B11A9BD1EFEB42C00313D0E /* dzq@2x.jpg in Resources */,
+				6BE49B9A1F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg in Resources */,
 				6B11A9CC1EFEB42C00313D0E /* wf_icon@2x.jpg in Resources */,
 				6B11A9C01EFEB42C00313D0E /* eason_icon@2x.jpg in Resources */,
+				6BE49B921F04CE710046CE6E /* SeeYouAgain.lrc in Resources */,
+				6BE49B971F04CEA80046CE6E /* 北京北京-唐伯虎_icon.png in Resources */,
 				6B11A9DC1EFEB42C00313D0E /* 120125029.mp3 in Resources */,
 				6B3899521EFEC340004F1937 /* QQMusicCell.xib in Resources */,
 				6B11A9D91EFEB42C00313D0E /* 10405520.mp3 in Resources */,
@@ -485,12 +574,15 @@
 				6B11A9C71EFEB42C00313D0E /* lkq@2x.jpg in Resources */,
 				6B11A9D61EFEB42C00313D0E /* 309769.lrc in Resources */,
 				6B11A9D71EFEB42C00313D0E /* 339744.lrc in Resources */,
+				6BE49B911F04CE710046CE6E /* 北京北京.lrc in Resources */,
 				6B11A9D81EFEB42C00313D0E /* 月半小夜曲.lrc in Resources */,
 				6B11A9BE1EFEB42C00313D0E /* dzq_icon@2x.jpg in Resources */,
 				6B11A9D31EFEB42C00313D0E /* 14945107.lrc in Resources */,
 				6B11A9731EFEAF2400313D0E /* Assets.xcassets in Resources */,
 				6B11A9E11EFEB42C00313D0E /* 309769.mp3 in Resources */,
+				6BE49B861F04CC830046CE6E /* miniPlayerCell.xib in Resources */,
 				6B11A9D11EFEB42C00313D0E /* 120125029.lrc in Resources */,
+				6BE49B981F04CEA80046CE6E /* 北京北京-唐伯虎.png in Resources */,
 				6B11A9BB1EFEB42C00313D0E /* bb@2x.jpg in Resources */,
 				6B11A9D41EFEB42C00313D0E /* 235319.lrc in Resources */,
 				6B11A9711EFEAF2400313D0E /* Main.storyboard in Resources */,
@@ -513,15 +605,19 @@
 				6B16320B1F0158A7005B85E7 /* QQLrcLabel.swift in Sources */,
 				6B11A9E61EFEB7FC00313D0E /* QQListController.swift in Sources */,
 				6B45FCD61F00F7CD00F40627 /* QQMusicMessageModel.swift in Sources */,
+				6BE49B831F04CC830046CE6E /* ListViewCell.swift in Sources */,
 				6BCA4D1C1EFF663E0012446B /* QQMusicTool.swift in Sources */,
 				6B11A9E81EFEB81500313D0E /* QQDetailController.swift in Sources */,
+				6BE49B871F04CC830046CE6E /* QQMusicTabbarView.swift in Sources */,
 				6B45FCD81F010F2000F40627 /* QQLrcModel.swift in Sources */,
 				6B1632091F013B33005B85E7 /* QQLrcTableVC.swift in Sources */,
 				6BCA4D1D1EFF663E0012446B /* QQTimeTool.swift in Sources */,
+				6BE49B851F04CC830046CE6E /* miniPlayerCell.swift in Sources */,
 				6B45FCD21F00B33200F40627 /* UIView+Extension.swift in Sources */,
 				6B16320E1F016637005B85E7 /* QQLrcCell.swift in Sources */,
 				6B45FCD41F00ED9D00F40627 /* CALayer+Extension.swift in Sources */,
 				6BCA4D1B1EFF663E0012446B /* QQMusicOperationTool.swift in Sources */,
+				6BE49B891F04CC830046CE6E /* songListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

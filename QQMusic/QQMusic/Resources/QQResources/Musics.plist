@@ -4,6 +4,34 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>See You Again</string>
+		<key>filename</key>
+		<string>SeeYouAgain.mp3</string>
+		<key>lrcname</key>
+		<string>SeeYouAgain.lrc</string>
+		<key>singer</key>
+		<string>Wiz Khalifa,Charlie Puth </string>
+		<key>singerIcon</key>
+		<string>Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg</string>
+		<key>icon</key>
+		<string>Wiz Khalifa,Charlie Puth - See You Again.jpeg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>北京北京</string>
+		<key>filename</key>
+		<string>北京北京.mp3</string>
+		<key>lrcname</key>
+		<string>北京北京.lrc</string>
+		<key>singer</key>
+		<string>唐伯虎</string>
+		<key>singerIcon</key>
+		<string>北京北京-唐伯虎_icon</string>
+		<key>icon</key>
+		<string>北京北京-唐伯虎</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>月半小夜曲</string>
 		<key>filename</key>
 		<string>1201111234.mp3</string>

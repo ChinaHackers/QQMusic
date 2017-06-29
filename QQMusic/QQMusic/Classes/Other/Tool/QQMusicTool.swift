@@ -16,6 +16,29 @@ class QQMusicTool: NSObject {
     var player: AVAudioPlayer?
     
     
+    override init() {
+        super.init()
+        // 只要调用这个工具类创建对象, 就立刻 激活 后台播放
+        
+        // 1. 获取音频会话
+        let session = AVAudioSession.sharedInstance()
+        
+        do {
+            // 2.设置音频会话类型(后台播放)
+            try session.setCategory(AVAudioSessionCategoryPlayback)
+            
+            // 3.激活会话
+            try session.setActive(true)
+            
+        } catch {
+            print(error)
+            return
+        }
+    
+    }
+    
+    
+    
     /// 提供一个方法播放歌曲
     ///
     /// - Parameter musicName: 歌曲名称
@@ -56,6 +79,14 @@ class QQMusicTool: NSObject {
     func pauseMusic() {
         player?.pause()
     }
+    /// 寻找到正确的时间
+    ///
+    /// - Parameter time: 时间间隔
+    func seekToTime(_ time: TimeInterval) {
+        // 当前时间赋值给time
+        player?.currentTime = time
+    }
+    
     
     
 }

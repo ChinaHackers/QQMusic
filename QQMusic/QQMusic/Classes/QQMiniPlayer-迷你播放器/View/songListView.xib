@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="songListView" customModule="QQMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gE1-cQ-30k">
+                    <rect key="frame" x="0.0" y="450" width="375" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qLF-e2-AFB">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Um1-o5-Q19">
+                    <rect key="frame" x="0.0" y="451" width="375" height="49"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ym-c8-mk2">
+                            <rect key="frame" x="172" y="10" width="31" height="30"/>
+                            <state key="normal" title="关闭">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="4Ym-c8-mk2" firstAttribute="centerX" secondItem="Um1-o5-Q19" secondAttribute="centerX" id="1VV-Kk-Tkn"/>
+                        <constraint firstAttribute="height" constant="49" id="A52-yA-ZVC"/>
+                        <constraint firstItem="4Ym-c8-mk2" firstAttribute="centerY" secondItem="Um1-o5-Q19" secondAttribute="centerY" id="gBY-bF-l0l"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qLF-e2-AFB" firstAttribute="trailing" secondItem="Um1-o5-Q19" secondAttribute="trailing" id="Geu-FQ-Pu6"/>
+                <constraint firstAttribute="trailing" secondItem="Um1-o5-Q19" secondAttribute="trailing" id="NfB-BT-rb9"/>
+                <constraint firstItem="Um1-o5-Q19" firstAttribute="top" secondItem="qLF-e2-AFB" secondAttribute="bottom" constant="10" id="RCN-yB-TRZ"/>
+                <constraint firstItem="Um1-o5-Q19" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UCJ-NW-rlO"/>
+                <constraint firstItem="qLF-e2-AFB" firstAttribute="leading" secondItem="Um1-o5-Q19" secondAttribute="leading" id="ZvQ-1i-el4"/>
+                <constraint firstAttribute="bottom" secondItem="Um1-o5-Q19" secondAttribute="bottom" id="iHj-Pp-Lgj"/>
+                <constraint firstItem="qLF-e2-AFB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="msa-mA-dvW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="closeBtn" destination="4Ym-c8-mk2" id="t3j-dA-iKB"/>
+                <outlet property="tab" destination="qLF-e2-AFB" id="iTK-IW-hSz"/>
+            </connections>
+            <point key="canvasLocation" x="27.5" y="137"/>
+        </view>
+    </objects>
+</document>

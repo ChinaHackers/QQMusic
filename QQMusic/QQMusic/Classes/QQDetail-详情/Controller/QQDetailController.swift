@@ -101,6 +101,29 @@ class QQDetailController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    /// 拖动进度条事件
+    ///
+    /// - Parameter sender: UISlider
+    @IBAction func sliderBtn(_ sender: UISlider) {
+       
+        addTimer()
+        
+        // 设置歌曲播放某个时间点
+        // 0.0 - 1.0
+        let value = sender.value
+        
+        // 获取总时长
+        let musicMessageM = QQMusicOperationTool.shareInstance.getMusicMessageModel()
+        let totalTime = musicMessageM.totalTime
+        
+        // 计算已经播放的时长
+        let costTime = totalTime * TimeInterval(value)
+        
+        // 设置歌曲播放到对应的时间点
+        QQMusicOperationTool.shareInstance.seekToTime(costTime)
+    }
+    
+    
     /// 播放或者暂停
     @IBAction func playOrPause(sender: UIButton) {
         
@@ -164,7 +187,7 @@ extension QQDetailController {
         
         lrcVC.lrcModels = lrcMs
         
-        print(lrcMs)
+//        print(lrcMs)
         
         addRotationAimation()
         

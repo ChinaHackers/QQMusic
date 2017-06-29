@@ -132,6 +132,9 @@
                                             <constraint firstAttribute="height" constant="30" id="Cfz-kK-Jtx"/>
                                         </constraints>
                                         <color key="minimumTrackTintColor" red="0.0" green="0.66612810860000005" blue="0.0013801952190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="sliderBtn:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZaV-aH-MA2"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -247,30 +250,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="-111.0944527736132"/>
+            <point key="canvasLocation" x="943" y="-752"/>
         </scene>
         <!--List Controller-->
-        <scene sceneID="V4G-qv-jVD">
+        <scene sceneID="GC5-Ow-GAc">
             <objects>
-                <tableViewController id="ZcE-2s-ceV" customClass="QQListController" customModule="QQMusic" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IwD-z6-hy1">
+                <viewController id="H2E-Xx-krL" customClass="QQListController" customModule="QQMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fEz-J3-qwe"/>
+                        <viewControllerLayoutGuide type="bottom" id="5jm-68-bMa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SFX-ID-iCa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="At1-ec-FDV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <connections>
-                            <outlet property="dataSource" destination="ZcE-2s-ceV" id="jdZ-En-N0A"/>
-                            <outlet property="delegate" destination="ZcE-2s-ceV" id="5FX-aK-ghs"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="Xfq-fK-dp6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i1o-0U-yVV"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="listToDetail" id="xGD-6m-vRJ"/>
+                        <outlet property="tableView" destination="At1-ec-FDV" id="Nq3-Nb-LbX"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="listToDetail" id="DhS-hl-UIq"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l4c-kV-k3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPq-7G-2MK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1063.2" y="-111.0944527736132"/>
+            <point key="canvasLocation" x="-10" y="-752"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nvr-fo-fjJ">
@@ -283,12 +293,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZcE-2s-ceV" kind="relationship" relationship="rootViewController" id="yD2-q2-hfo"/>
+                        <segue destination="H2E-Xx-krL" kind="relationship" relationship="rootViewController" id="trU-hW-LhD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EM4-MI-MAY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124" y="-111.0944527736132"/>
+            <point key="canvasLocation" x="-855" y="-752"/>
         </scene>
     </scenes>
     <resources>
