@@ -18,6 +18,48 @@
 	</dict>
 	<dict>
 		<key>name</key>
+		<string>Gold</string>
+		<key>filename</key>
+		<string>Grabbitz,Layne-Cold.mp3</string>
+		<key>lrcname</key>
+		<string>Cold-Grabbitz.lrc</string>
+		<key>singer</key>
+		<string>Grabbitz\Layne</string>
+		<key>singerIcon</key>
+		<string>Grabbitz,Layne-Cold_icon.jpg</string>
+		<key>icon</key>
+		<string>Grabbitz,Layne-Cold.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Stop Girl</string>
+		<key>filename</key>
+		<string>StopGirl.mp3</string>
+		<key>lrcname</key>
+		<string>StopGirl-U-Kiss.lrc</string>
+		<key>singer</key>
+		<string>U-Kiss</string>
+		<key>singerIcon</key>
+		<string>StopGirl_icon.jpg</string>
+		<key>icon</key>
+		<string>StopGirl.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>躲避的爱</string>
+		<key>filename</key>
+		<string>躲避的爱.mp3</string>
+		<key>lrcname</key>
+		<string>躲避的爱-叶麟.lrc</string>
+		<key>singer</key>
+		<string>叶麟</string>
+		<key>singerIcon</key>
+		<string>YL_icon</string>
+		<key>icon</key>
+		<string>YL</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>北京北京</string>
 		<key>filename</key>
 		<string>北京北京.mp3</string>
@@ -29,6 +71,48 @@
 		<string>北京北京-唐伯虎_icon</string>
 		<key>icon</key>
 		<string>北京北京-唐伯虎</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>兰花指(2015暖场RnB)</string>
+		<key>filename</key>
+		<string>兰花指(2015暖场RnB).mp3</string>
+		<key>lrcname</key>
+		<string>兰花指-阿里郎.lrc</string>
+		<key>singer</key>
+		<string>阿里郎</string>
+		<key>singerIcon</key>
+		<string>ALL_icon.jpg</string>
+		<key>icon</key>
+		<string>ALL.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>我的天空</string>
+		<key>filename</key>
+		<string>我的天空.mp3</string>
+		<key>lrcname</key>
+		<string>我的天空-南征北战.lrc</string>
+		<key>singer</key>
+		<string>南征北战</string>
+		<key>singerIcon</key>
+		<string>南征北战-我的天空_icon.jpg</string>
+		<key>icon</key>
+		<string>南征北战-我的天空.jpg</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>其实我很在乎你</string>
+		<key>filename</key>
+		<string>谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3</string>
+		<key>lrcname</key>
+		<string>其实我很在乎你-车静子.lrc</string>
+		<key>singer</key>
+		<string>谢容儿</string>
+		<key>singerIcon</key>
+		<string>谢容儿-其实我很在乎你_icon.jpg</string>
+		<key>icon</key>
+		<string>谢容儿-其实我很在乎你.jpg</string>
 	</dict>
 	<dict>
 		<key>name</key>

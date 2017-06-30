@@ -67,6 +67,30 @@
 		6B45FCD41F00ED9D00F40627 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45FCD31F00ED9D00F40627 /* CALayer+Extension.swift */; };
 		6B45FCD61F00F7CD00F40627 /* QQMusicMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45FCD51F00F7CD00F40627 /* QQMusicMessageModel.swift */; };
 		6B45FCD81F010F2000F40627 /* QQLrcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45FCD71F010F2000F40627 /* QQLrcModel.swift */; };
+		6B7883E21F06A92200D1DA6F /* 躲避的爱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883DC1F06A92200D1DA6F /* 躲避的爱.mp3 */; };
+		6B7883E31F06A92200D1DA6F /* 兰花指(2015暖场RnB).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883DD1F06A92200D1DA6F /* 兰花指(2015暖场RnB).mp3 */; };
+		6B7883E41F06A92200D1DA6F /* 我的天空.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883DE1F06A92200D1DA6F /* 我的天空.mp3 */; };
+		6B7883E51F06A92200D1DA6F /* 谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883DF1F06A92200D1DA6F /* 谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3 */; };
+		6B7883E61F06A92200D1DA6F /* Grabbitz,Layne-Cold.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883E01F06A92200D1DA6F /* Grabbitz,Layne-Cold.mp3 */; };
+		6B7883E71F06A92200D1DA6F /* StopGirl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883E11F06A92200D1DA6F /* StopGirl.mp3 */; };
+		6B7883EF1F06AA4E00D1DA6F /* 兰花指-阿里郎.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883E91F06AA4E00D1DA6F /* 兰花指-阿里郎.lrc */; };
+		6B7883F31F06AA4E00D1DA6F /* StopGirl-U-Kiss.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883ED1F06AA4E00D1DA6F /* StopGirl-U-Kiss.lrc */; };
+		6B7884001F06AA6B00D1DA6F /* 南征北战-我的天空_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883F41F06AA6B00D1DA6F /* 南征北战-我的天空_icon.jpg */; };
+		6B7884011F06AA6B00D1DA6F /* 南征北战-我的天空.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883F51F06AA6B00D1DA6F /* 南征北战-我的天空.jpg */; };
+		6B7884021F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883F61F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你_icon.jpg */; };
+		6B7884031F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883F71F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你.jpg */; };
+		6B7884041F06AA6B00D1DA6F /* ALL_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883F81F06AA6B00D1DA6F /* ALL_icon.jpg */; };
+		6B7884051F06AA6B00D1DA6F /* ALL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883F91F06AA6B00D1DA6F /* ALL.jpg */; };
+		6B7884061F06AA6B00D1DA6F /* Grabbitz,Layne-Cold_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883FA1F06AA6B00D1DA6F /* Grabbitz,Layne-Cold_icon.jpg */; };
+		6B7884071F06AA6B00D1DA6F /* Grabbitz,Layne-Cold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883FB1F06AA6B00D1DA6F /* Grabbitz,Layne-Cold.jpg */; };
+		6B7884081F06AA6B00D1DA6F /* StopGirl_icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883FC1F06AA6B00D1DA6F /* StopGirl_icon.jpg */; };
+		6B7884091F06AA6B00D1DA6F /* StopGirl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883FD1F06AA6B00D1DA6F /* StopGirl.jpg */; };
+		6B78840A1F06AA6B00D1DA6F /* YL_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883FE1F06AA6B00D1DA6F /* YL_icon.png */; };
+		6B78840B1F06AA6B00D1DA6F /* YL.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7883FF1F06AA6B00D1DA6F /* YL.png */; };
+		6B78840D1F06AB0200D1DA6F /* 我的天空-南征北战.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6B78840C1F06AB0200D1DA6F /* 我的天空-南征北战.lrc */; };
+		6B78840F1F06AB8500D1DA6F /* 其实我很在乎你-车静子.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6B78840E1F06AB8500D1DA6F /* 其实我很在乎你-车静子.lrc */; };
+		6B7884111F06AC4D00D1DA6F /* 躲避的爱-叶麟.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6B7884101F06AC4D00D1DA6F /* 躲避的爱-叶麟.lrc */; };
+		6B7884151F06B09300D1DA6F /* Cold-Grabbitz.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6B7884141F06B09300D1DA6F /* Cold-Grabbitz.lrc */; };
 		6B7A69E51F061B0B00220A9C /* QQImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A69E41F061B0B00220A9C /* QQImageTool.swift */; };
 		6BCA4D1B1EFF663E0012446B /* QQMusicOperationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D181EFF663E0012446B /* QQMusicOperationTool.swift */; };
 		6BCA4D1C1EFF663E0012446B /* QQMusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D191EFF663E0012446B /* QQMusicTool.swift */; };
@@ -87,6 +111,8 @@
 		6BE49B981F04CEA80046CE6E /* 北京北京-唐伯虎.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B941F04CEA80046CE6E /* 北京北京-唐伯虎.png */; };
 		6BE49B991F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B951F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg */; };
 		6BE49B9A1F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6BE49B961F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg */; };
+		6BFF47851F065B3400AAF8D4 /* QQListController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF47841F065B3400AAF8D4 /* QQListController.storyboard */; };
+		6BFF47871F065B6B00AAF8D4 /* QQDetailController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFF47861F065B6B00AAF8D4 /* QQDetailController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -152,6 +178,30 @@
 		6B45FCD31F00ED9D00F40627 /* CALayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		6B45FCD51F00F7CD00F40627 /* QQMusicMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicMessageModel.swift; sourceTree = "<group>"; };
 		6B45FCD71F010F2000F40627 /* QQLrcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLrcModel.swift; sourceTree = "<group>"; };
+		6B7883DC1F06A92200D1DA6F /* 躲避的爱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "躲避的爱.mp3"; sourceTree = "<group>"; };
+		6B7883DD1F06A92200D1DA6F /* 兰花指(2015暖场RnB).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "兰花指(2015暖场RnB).mp3"; sourceTree = "<group>"; };
+		6B7883DE1F06A92200D1DA6F /* 我的天空.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "我的天空.mp3"; sourceTree = "<group>"; };
+		6B7883DF1F06A92200D1DA6F /* 谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3"; sourceTree = "<group>"; };
+		6B7883E01F06A92200D1DA6F /* Grabbitz,Layne-Cold.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Grabbitz,Layne-Cold.mp3"; sourceTree = "<group>"; };
+		6B7883E11F06A92200D1DA6F /* StopGirl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = StopGirl.mp3; sourceTree = "<group>"; };
+		6B7883E91F06AA4E00D1DA6F /* 兰花指-阿里郎.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "兰花指-阿里郎.lrc"; sourceTree = "<group>"; };
+		6B7883ED1F06AA4E00D1DA6F /* StopGirl-U-Kiss.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "StopGirl-U-Kiss.lrc"; sourceTree = "<group>"; };
+		6B7883F41F06AA6B00D1DA6F /* 南征北战-我的天空_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "南征北战-我的天空_icon.jpg"; sourceTree = "<group>"; };
+		6B7883F51F06AA6B00D1DA6F /* 南征北战-我的天空.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "南征北战-我的天空.jpg"; sourceTree = "<group>"; };
+		6B7883F61F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "谢容儿-其实我很在乎你_icon.jpg"; sourceTree = "<group>"; };
+		6B7883F71F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "谢容儿-其实我很在乎你.jpg"; sourceTree = "<group>"; };
+		6B7883F81F06AA6B00D1DA6F /* ALL_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ALL_icon.jpg; sourceTree = "<group>"; };
+		6B7883F91F06AA6B00D1DA6F /* ALL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ALL.jpg; sourceTree = "<group>"; };
+		6B7883FA1F06AA6B00D1DA6F /* Grabbitz,Layne-Cold_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grabbitz,Layne-Cold_icon.jpg"; sourceTree = "<group>"; };
+		6B7883FB1F06AA6B00D1DA6F /* Grabbitz,Layne-Cold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Grabbitz,Layne-Cold.jpg"; sourceTree = "<group>"; };
+		6B7883FC1F06AA6B00D1DA6F /* StopGirl_icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StopGirl_icon.jpg; sourceTree = "<group>"; };
+		6B7883FD1F06AA6B00D1DA6F /* StopGirl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = StopGirl.jpg; sourceTree = "<group>"; };
+		6B7883FE1F06AA6B00D1DA6F /* YL_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YL_icon.png; sourceTree = "<group>"; };
+		6B7883FF1F06AA6B00D1DA6F /* YL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YL.png; sourceTree = "<group>"; };
+		6B78840C1F06AB0200D1DA6F /* 我的天空-南征北战.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "我的天空-南征北战.lrc"; sourceTree = "<group>"; };
+		6B78840E1F06AB8500D1DA6F /* 其实我很在乎你-车静子.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "其实我很在乎你-车静子.lrc"; sourceTree = "<group>"; };
+		6B7884101F06AC4D00D1DA6F /* 躲避的爱-叶麟.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "躲避的爱-叶麟.lrc"; sourceTree = "<group>"; };
+		6B7884141F06B09300D1DA6F /* Cold-Grabbitz.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Cold-Grabbitz.lrc"; sourceTree = "<group>"; };
 		6B7A69E41F061B0B00220A9C /* QQImageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQImageTool.swift; sourceTree = "<group>"; };
 		6BCA4D181EFF663E0012446B /* QQMusicOperationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicOperationTool.swift; sourceTree = "<group>"; };
 		6BCA4D191EFF663E0012446B /* QQMusicTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTool.swift; sourceTree = "<group>"; };
@@ -172,6 +222,8 @@
 		6BE49B941F04CEA80046CE6E /* 北京北京-唐伯虎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "北京北京-唐伯虎.png"; sourceTree = "<group>"; };
 		6BE49B951F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg"; sourceTree = "<group>"; };
 		6BE49B961F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wiz Khalifa,Charlie Puth - See You Again.jpeg"; sourceTree = "<group>"; };
+		6BFF47841F065B3400AAF8D4 /* QQListController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QQListController.storyboard; sourceTree = "<group>"; };
+		6BFF47861F065B6B00AAF8D4 /* QQDetailController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QQDetailController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				6B11A9E71EFEB81500313D0E /* QQDetailController.swift */,
+				6BFF47861F065B6B00AAF8D4 /* QQDetailController.storyboard */,
 				6B1632081F013B33005B85E7 /* QQLrcTableVC.swift */,
 			);
 			path = Controller;
@@ -316,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				6B11A9E51EFEB7FC00313D0E /* QQListController.swift */,
+				6BFF47841F065B3400AAF8D4 /* QQListController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -384,6 +438,18 @@
 				6B11A9A01EFEB42C00313D0E /* wf_icon@2x.jpg */,
 				6B11A9A11EFEB42C00313D0E /* zxy@2x.jpg */,
 				6B11A9A21EFEB42C00313D0E /* zxy_icon@2x.jpg */,
+				6B7883F41F06AA6B00D1DA6F /* 南征北战-我的天空_icon.jpg */,
+				6B7883F51F06AA6B00D1DA6F /* 南征北战-我的天空.jpg */,
+				6B7883F61F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你_icon.jpg */,
+				6B7883F71F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你.jpg */,
+				6B7883F81F06AA6B00D1DA6F /* ALL_icon.jpg */,
+				6B7883F91F06AA6B00D1DA6F /* ALL.jpg */,
+				6B7883FA1F06AA6B00D1DA6F /* Grabbitz,Layne-Cold_icon.jpg */,
+				6B7883FB1F06AA6B00D1DA6F /* Grabbitz,Layne-Cold.jpg */,
+				6B7883FC1F06AA6B00D1DA6F /* StopGirl_icon.jpg */,
+				6B7883FD1F06AA6B00D1DA6F /* StopGirl.jpg */,
+				6B7883FE1F06AA6B00D1DA6F /* YL_icon.png */,
+				6B7883FF1F06AA6B00D1DA6F /* YL.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -403,6 +469,12 @@
 				6B11A9AD1EFEB42C00313D0E /* 月半小夜曲.lrc */,
 				6BE49B8F1F04CE710046CE6E /* 北京北京.lrc */,
 				6BE49B901F04CE710046CE6E /* SeeYouAgain.lrc */,
+				6B7884101F06AC4D00D1DA6F /* 躲避的爱-叶麟.lrc */,
+				6B7883E91F06AA4E00D1DA6F /* 兰花指-阿里郎.lrc */,
+				6B78840E1F06AB8500D1DA6F /* 其实我很在乎你-车静子.lrc */,
+				6B78840C1F06AB0200D1DA6F /* 我的天空-南征北战.lrc */,
+				6B7884141F06B09300D1DA6F /* Cold-Grabbitz.lrc */,
+				6B7883ED1F06AA4E00D1DA6F /* StopGirl-U-Kiss.lrc */,
 			);
 			path = Lrcs;
 			sourceTree = "<group>";
@@ -410,6 +482,12 @@
 		6B11A9AE1EFEB42C00313D0E /* MP3s */ = {
 			isa = PBXGroup;
 			children = (
+				6B7883DC1F06A92200D1DA6F /* 躲避的爱.mp3 */,
+				6B7883DD1F06A92200D1DA6F /* 兰花指(2015暖场RnB).mp3 */,
+				6B7883DE1F06A92200D1DA6F /* 我的天空.mp3 */,
+				6B7883DF1F06A92200D1DA6F /* 谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3 */,
+				6B7883E01F06A92200D1DA6F /* Grabbitz,Layne-Cold.mp3 */,
+				6B7883E11F06A92200D1DA6F /* StopGirl.mp3 */,
 				6BE49B8B1F04CE5C0046CE6E /* 北京北京.mp3 */,
 				6BE49B8C1F04CE5C0046CE6E /* SeeYouAgain.mp3 */,
 				6B11A9AF1EFEB42C00313D0E /* 10405520.mp3 */,
@@ -542,6 +620,8 @@
 				6B11A9D51EFEB42C00313D0E /* 255319.lrc in Resources */,
 				6B11A9D01EFEB42C00313D0E /* 10736444.lrc in Resources */,
 				6B11A9DD1EFEB42C00313D0E /* 12309111.mp3 in Resources */,
+				6B7884081F06AA6B00D1DA6F /* StopGirl_icon.jpg in Resources */,
+				6B78840B1F06AA6B00D1DA6F /* YL.png in Resources */,
 				6BE49B991F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again_icon.jpeg in Resources */,
 				6B11A9CA1EFEB42C00313D0E /* nanquan_icon@2x.jpg in Resources */,
 				6B11A9C41EFEB42C00313D0E /* jj_icon@2x.png in Resources */,
@@ -551,22 +631,33 @@
 				6BE49B841F04CC830046CE6E /* ListViewCell.xib in Resources */,
 				6BE49B8A1F04CC830046CE6E /* songListView.xib in Resources */,
 				6B11A9E41EFEB42C00313D0E /* QQListBack.jpg in Resources */,
+				6B7884001F06AA6B00D1DA6F /* 南征北战-我的天空_icon.jpg in Resources */,
 				6B11A9C21EFEB42C00313D0E /* jay_icon@2x.png in Resources */,
 				6BE49B8E1F04CE5C0046CE6E /* SeeYouAgain.mp3 in Resources */,
 				6B11A9DE1EFEB42C00313D0E /* 14945107.mp3 in Resources */,
 				6B11A9BC1EFEB42C00313D0E /* bb_icon@2x.jpg in Resources */,
 				6B11A9CF1EFEB42C00313D0E /* 10405520.lrc in Resources */,
 				6BE49B8D1F04CE5C0046CE6E /* 北京北京.mp3 in Resources */,
+				6B78840D1F06AB0200D1DA6F /* 我的天空-南征北战.lrc in Resources */,
 				6B11A9C61EFEB42C00313D0E /* kzxd_icon@2x.jpg in Resources */,
+				6B7883E31F06A92200D1DA6F /* 兰花指(2015暖场RnB).mp3 in Resources */,
 				6B11A9C11EFEB42C00313D0E /* jay@2x.jpg in Resources */,
 				6B11A9761EFEAF2400313D0E /* LaunchScreen.storyboard in Resources */,
 				6B11A9CE1EFEB42C00313D0E /* zxy_icon@2x.jpg in Resources */,
+				6B78840F1F06AB8500D1DA6F /* 其实我很在乎你-车静子.lrc in Resources */,
 				6B11A9E01EFEB42C00313D0E /* 255319.mp3 in Resources */,
 				6B11A9CB1EFEB42C00313D0E /* wf@2x.jpg in Resources */,
+				6B7884051F06AA6B00D1DA6F /* ALL.jpg in Resources */,
 				6B11A9BD1EFEB42C00313D0E /* dzq@2x.jpg in Resources */,
+				6B7884041F06AA6B00D1DA6F /* ALL_icon.jpg in Resources */,
+				6B7884151F06B09300D1DA6F /* Cold-Grabbitz.lrc in Resources */,
 				6BE49B9A1F04CEA80046CE6E /* Wiz Khalifa,Charlie Puth - See You Again.jpeg in Resources */,
 				6B11A9CC1EFEB42C00313D0E /* wf_icon@2x.jpg in Resources */,
+				6BFF47851F065B3400AAF8D4 /* QQListController.storyboard in Resources */,
+				6B7883E51F06A92200D1DA6F /* 谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3 in Resources */,
 				6B11A9C01EFEB42C00313D0E /* eason_icon@2x.jpg in Resources */,
+				6B7883E21F06A92200D1DA6F /* 躲避的爱.mp3 in Resources */,
+				6B7883E71F06A92200D1DA6F /* StopGirl.mp3 in Resources */,
 				6BE49B921F04CE710046CE6E /* SeeYouAgain.lrc in Resources */,
 				6BE49B971F04CEA80046CE6E /* 北京北京-唐伯虎_icon.png in Resources */,
 				6B11A9DC1EFEB42C00313D0E /* 120125029.mp3 in Resources */,
@@ -575,17 +666,27 @@
 				6B11A9C51EFEB42C00313D0E /* kzxd@2x.jpg in Resources */,
 				6B11A9C81EFEB42C00313D0E /* lkq_icon@2x.jpg in Resources */,
 				6B11A9DF1EFEB42C00313D0E /* 235319.mp3 in Resources */,
+				6B7884021F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你_icon.jpg in Resources */,
 				6B11A9D21EFEB42C00313D0E /* 12309111.lrc in Resources */,
 				6B11A9C31EFEB42C00313D0E /* jj@2x.jpg in Resources */,
 				6B11A9CD1EFEB42C00313D0E /* zxy@2x.jpg in Resources */,
 				6B16320F1F016637005B85E7 /* QQLrcCell.xib in Resources */,
 				6B11A9BF1EFEB42C00313D0E /* eason@2x.jpg in Resources */,
+				6B7884091F06AA6B00D1DA6F /* StopGirl.jpg in Resources */,
 				6B11A9C71EFEB42C00313D0E /* lkq@2x.jpg in Resources */,
+				6B7884111F06AC4D00D1DA6F /* 躲避的爱-叶麟.lrc in Resources */,
 				6B11A9D61EFEB42C00313D0E /* 309769.lrc in Resources */,
 				6B11A9D71EFEB42C00313D0E /* 339744.lrc in Resources */,
 				6BE49B911F04CE710046CE6E /* 北京北京.lrc in Resources */,
+				6B78840A1F06AA6B00D1DA6F /* YL_icon.png in Resources */,
+				6B7883F31F06AA4E00D1DA6F /* StopGirl-U-Kiss.lrc in Resources */,
+				6B7884071F06AA6B00D1DA6F /* Grabbitz,Layne-Cold.jpg in Resources */,
 				6B11A9D81EFEB42C00313D0E /* 月半小夜曲.lrc in Resources */,
 				6B11A9BE1EFEB42C00313D0E /* dzq_icon@2x.jpg in Resources */,
+				6B7884061F06AA6B00D1DA6F /* Grabbitz,Layne-Cold_icon.jpg in Resources */,
+				6B7884031F06AA6B00D1DA6F /* 谢容儿-其实我很在乎你.jpg in Resources */,
+				6BFF47871F065B6B00AAF8D4 /* QQDetailController.storyboard in Resources */,
+				6B7883EF1F06AA4E00D1DA6F /* 兰花指-阿里郎.lrc in Resources */,
 				6B11A9D31EFEB42C00313D0E /* 14945107.lrc in Resources */,
 				6B11A9731EFEAF2400313D0E /* Assets.xcassets in Resources */,
 				6B11A9E11EFEB42C00313D0E /* 309769.mp3 in Resources */,
@@ -593,9 +694,12 @@
 				6B11A9D11EFEB42C00313D0E /* 120125029.lrc in Resources */,
 				6BE49B981F04CEA80046CE6E /* 北京北京-唐伯虎.png in Resources */,
 				6B11A9BB1EFEB42C00313D0E /* bb@2x.jpg in Resources */,
+				6B7884011F06AA6B00D1DA6F /* 南征北战-我的天空.jpg in Resources */,
 				6B11A9D41EFEB42C00313D0E /* 235319.lrc in Resources */,
 				6B11A9711EFEAF2400313D0E /* Main.storyboard in Resources */,
 				6B11A9C91EFEB42C00313D0E /* nanquan@2x.jpg in Resources */,
+				6B7883E41F06A92200D1DA6F /* 我的天空.mp3 in Resources */,
+				6B7883E61F06A92200D1DA6F /* Grabbitz,Layne-Cold.mp3 in Resources */,
 				6B11A9E21EFEB42C00313D0E /* 339744.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

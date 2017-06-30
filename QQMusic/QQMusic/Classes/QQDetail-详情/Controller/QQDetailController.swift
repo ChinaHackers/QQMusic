@@ -62,6 +62,11 @@ class QQDetailController: UIViewController {
     var updateLrcLink: CADisplayLink?
     
     
+    //MARK: 移除通知:  在接收通知控制器中移除的，不是在发送通知的类中移除通知的
+    deinit { //析构方法中移除
+        NotificationCenter.default.removeObserver(self)
+    }
+ 
     // MARK: - 懒加载
     /// 歌词视图控制器
     fileprivate lazy var lrcVC: QQLrcTableVC = {
@@ -76,6 +81,11 @@ class QQDetailController: UIViewController {
         super.viewDidLoad()
     
         configUI()
+        
+        // MARK: 接收通知
+        // 通知调用 下一首方法
+        NotificationCenter.default.addObserver(self, selector: #selector(nextMusic), name: NSNotification.Name.init(kPlayFinishNotification), object: nil)
+        
     }
     
     // 视图即将加入窗口时调用
@@ -159,7 +169,6 @@ class QQDetailController: UIViewController {
 
 
 // MARK: - 自定义方法
-
 extension QQDetailController {
     
     /// 切换歌曲时, 需要更新 1 次的操作
@@ -186,8 +195,6 @@ extension QQDetailController {
         let lrcMs = QQMusicDataTool.getLrcModels(lrcName: musicM.lrcname)
         
         lrcVC.lrcModels = lrcMs
-        
-//        print(lrcMs)
         
         addRotationAimation()
         
@@ -362,7 +369,6 @@ extension QQDetailController {
         HaloView.layer.cornerRadius = HaloView.frame.size.width * 0.5
         // 是否开启圆角效果
         HaloView.layer.masksToBounds = true
-        
     }
     
 }
@@ -395,7 +401,6 @@ extension QQDetailController: UIScrollViewDelegate {
         lrcLabel.alpha = radio
         HaloView.alpha = radio
     }
-    
     
     /// 添加旋转动画
     fileprivate func addRotationAimation() {
