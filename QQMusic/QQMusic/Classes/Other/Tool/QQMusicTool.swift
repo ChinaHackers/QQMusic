@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 
-// MARK: - QQMusicTool类: 负责,单首歌曲的操作, 播放, 暂停, 停止, 快进, 倍数..
+/// 音乐工具类: 负责,单首歌曲的操作, 播放, 暂停, 停止, 快进, 倍数..
 class QQMusicTool: NSObject {
 
     var player: AVAudioPlayer?
@@ -56,22 +56,17 @@ class QQMusicTool: NSObject {
         // 2.根据文件路径创建播放器
         do {
             player = try AVAudioPlayer(contentsOf: url)
-            // 准备播放
-//            player?.prepareToPlay()
-            // 开始播放
-//            player?.play()
+            
+            // 3.准备播放
+            player?.prepareToPlay()
+            
+            // 4.开始播放
+            player?.play()
         }catch {
             print(error)
             return
         }
-        
-        // 3.准备播放
-        player?.prepareToPlay()
-        
-        // 4.开始播放
-        player?.play()
-        
-        
+
     }
     
     
@@ -79,6 +74,7 @@ class QQMusicTool: NSObject {
     func pauseMusic() {
         player?.pause()
     }
+    
     /// 寻找到正确的时间
     ///
     /// - Parameter time: 时间间隔

@@ -67,6 +67,7 @@
 		6B45FCD41F00ED9D00F40627 /* CALayer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45FCD31F00ED9D00F40627 /* CALayer+Extension.swift */; };
 		6B45FCD61F00F7CD00F40627 /* QQMusicMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45FCD51F00F7CD00F40627 /* QQMusicMessageModel.swift */; };
 		6B45FCD81F010F2000F40627 /* QQLrcModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45FCD71F010F2000F40627 /* QQLrcModel.swift */; };
+		6B7A69E51F061B0B00220A9C /* QQImageTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A69E41F061B0B00220A9C /* QQImageTool.swift */; };
 		6BCA4D1B1EFF663E0012446B /* QQMusicOperationTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D181EFF663E0012446B /* QQMusicOperationTool.swift */; };
 		6BCA4D1C1EFF663E0012446B /* QQMusicTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D191EFF663E0012446B /* QQMusicTool.swift */; };
 		6BCA4D1D1EFF663E0012446B /* QQTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCA4D1A1EFF663E0012446B /* QQTimeTool.swift */; };
@@ -151,6 +152,7 @@
 		6B45FCD31F00ED9D00F40627 /* CALayer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+Extension.swift"; sourceTree = "<group>"; };
 		6B45FCD51F00F7CD00F40627 /* QQMusicMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicMessageModel.swift; sourceTree = "<group>"; };
 		6B45FCD71F010F2000F40627 /* QQLrcModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLrcModel.swift; sourceTree = "<group>"; };
+		6B7A69E41F061B0B00220A9C /* QQImageTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQImageTool.swift; sourceTree = "<group>"; };
 		6BCA4D181EFF663E0012446B /* QQMusicOperationTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicOperationTool.swift; sourceTree = "<group>"; };
 		6BCA4D191EFF663E0012446B /* QQMusicTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicTool.swift; sourceTree = "<group>"; };
 		6BCA4D1A1EFF663E0012446B /* QQTimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQTimeTool.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				6BCA4D191EFF663E0012446B /* QQMusicTool.swift */,
 				6BCA4D181EFF663E0012446B /* QQMusicOperationTool.swift */,
 				6BCA4D1A1EFF663E0012446B /* QQTimeTool.swift */,
+				6B7A69E41F061B0B00220A9C /* QQImageTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -502,7 +505,13 @@
 				TargetAttributes = {
 					6B11A9671EFEAF2400313D0E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QTU7D3WQQ9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -613,6 +622,7 @@
 				6B1632091F013B33005B85E7 /* QQLrcTableVC.swift in Sources */,
 				6BCA4D1D1EFF663E0012446B /* QQTimeTool.swift in Sources */,
 				6BE49B851F04CC830046CE6E /* miniPlayerCell.swift in Sources */,
+				6B7A69E51F061B0B00220A9C /* QQImageTool.swift in Sources */,
 				6B45FCD21F00B33200F40627 /* UIView+Extension.swift in Sources */,
 				6B16320E1F016637005B85E7 /* QQLrcCell.swift in Sources */,
 				6B45FCD41F00ED9D00F40627 /* CALayer+Extension.swift in Sources */,
@@ -739,6 +749,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = QTU7D3WQQ9;
 				INFOPLIST_FILE = QQMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LC.QQMusic;
@@ -752,6 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = QTU7D3WQQ9;
 				INFOPLIST_FILE = QQMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LC.QQMusic;

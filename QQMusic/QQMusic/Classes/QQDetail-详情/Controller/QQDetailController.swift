@@ -300,6 +300,12 @@ extension QQDetailController {
         // 赋值lrcVC, 让它来负责具体怎么滚
         lrcVC.scrollRow = row
         
+        
+        // 如果处于后台状态, 就设置锁屏信息
+        if UIApplication.shared.applicationState == .background {
+            // 设置锁屏信息
+            QQMusicOperationTool.shareInstance.setUpLookMessage()
+        }
     }
     
 }
@@ -422,13 +428,66 @@ extension QQDetailController: UIScrollViewDelegate {
     
 }
 
-
-
-
-
-
-
-
-
-
-
+// MARK: - 用于接收远程事件
+extension QQDetailController {
+    
+    /// 重写远程事件方法接收
+    ///
+    /// - Parameter event: 事件
+    override func remoteControlReceived(with event: UIEvent?) {
+        
+        /* 事件类型: UIEventType :
+                     touches       : 触摸
+                     motion        : 手势
+                     remoteControl : 远程控制
+                     presses       : 按压(3D Touch) 
+         */
+        
+        // subtype: 子类型
+        let type = event?.subtype
+        
+        switch type! {
+        case .remoteControlPlay:
+            print("播放")
+            QQMusicOperationTool.shareInstance.playCurrentMusic()
+        case .remoteControlPause:
+            print("暂停")
+            QQMusicOperationTool.shareInstance.pauseCurrentMusic()
+        case .remoteControlNextTrack:
+            print("下一首")
+            QQMusicOperationTool.shareInstance.nextMusic()
+        case .remoteControlPreviousTrack:
+            print("上一首")
+            QQMusicOperationTool.shareInstance.PreviousMusic()
+        default:
+            print("nono")
+        }
+        
+        UpdateOnce()
+        
+    }
+    
+/*
+ UIResponder 类中提供了摇一摇: 开始, 取消, 结束 .
+    
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {}
+    
+    override func motionCancelled(_ motion: UIEventSubtype, with event: UIEvent?) {}
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {}
+*/
+    
+    /// 运动事件(摇一摇开始)
+    ///
+    /// - Parameters:
+    ///   - motion: UI事件类型
+    ///   - event: 类型
+    override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+       
+        QQMusicOperationTool.shareInstance.nextMusic()
+        
+        UpdateOnce()
+    }
+    
+    
+}

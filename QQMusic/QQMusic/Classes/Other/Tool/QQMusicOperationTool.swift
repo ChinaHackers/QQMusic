@@ -10,11 +10,18 @@
 
 
 import UIKit
+import MediaPlayer
 
- // QQMusicOperationTool类: 控制的是播放的业务逻辑, 具体的播放, 暂停功能实现(QQMusicTool)
-
+/// 音乐操作工具类: 控制的是播放的业务逻辑, 具体的播放, 暂停功能实现(QQMusicTool)
 class QQMusicOperationTool: NSObject {
 
+    
+    /// 歌词最后一行
+    var lastRow = -1
+    
+    
+    /// 专辑
+//    var artWork: MPMediaItemArtwork?
     
     /// 音乐信息模型对象
     private var musicModel = QQMusicMessageModel()
@@ -132,5 +139,70 @@ class QQMusicOperationTool: NSObject {
     func seekToTime(_ time: TimeInterval) {
          tool.seekToTime(time)
     }
- 
+    
+    
+    /// 设置锁屏信息
+    func setUpLookMessage() {
+        
+    /*
+         // MPMediaItemPropertyAlbumTitle                 // 歌曲名称
+         // MPMediaItemPropertyArtist                     // 艺术家 \ 歌手名称
+         // MPMediaItemPropertyPlaybackDuration           // 播放时间
+         // MPNowPlayingInfoPropertyElapsedPlaybackTime   // 已经播放时间
+    */
+        
+        // 取出需要展示的数据模型
+        let musicMessageModel = getMusicMessageModel()
+        
+        
+        // 1.获取锁屏中心
+        let lookCenter = MPNowPlayingInfoCenter.default()
+        
+        // 2.给锁屏中心赋值
+        
+        /// 歌曲名称
+        let musicName = musicMessageModel.musicM?.name ?? ""
+        /// 歌手名称
+        let singerName = musicMessageModel.musicM?.singer ?? ""
+        /// 播放时间
+        let costTime = musicMessageModel.costTime
+        /// 总时长
+        let totalTime = musicMessageModel.totalTime
+        /// 专辑图片
+        let image = UIImage(named: musicMessageModel.musicM?.icon ?? "")
+        
+        
+        // 1. 获取当前正在播放的歌词
+        
+        // 获取歌词内容
+        let lrcMs = QQMusicDataTool.getLrcModels(lrcName: musicMessageModel.musicM?.lrcname)
+        
+        // 获取歌词模型
+        let lrcModelRow = QQMusicDataTool.getCurrentLrcM(currentTime: musicMessageModel.costTime, lrcModels: lrcMs)
+        let lrcM = lrcModelRow.lrcM
+        
+        
+        // 2. 绘制到图片, 生成一个新的图片
+        let resultImage = QQImageTool.getNewImage(image, str: lrcM?.lrcContent)
+   
+        // 3. 设置专辑图片
+        let size = CGSize(width: 400, height: 400)
+        
+        let artWork = MPMediaItemArtwork(boundsSize: size) { (sz) -> UIImage in
+            return resultImage!
+        }
+
+        lookCenter.nowPlayingInfo = [
+        
+            MPMediaItemPropertyAlbumTitle: musicName,
+            MPMediaItemPropertyArtist: singerName,
+            MPMediaItemPropertyPlaybackDuration: totalTime,
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: costTime,
+            MPMediaItemPropertyArtwork: artWork
+        ]
+        
+        // 3.接收远程事件
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+    }
+
 }
