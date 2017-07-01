@@ -37,7 +37,7 @@ class QQImageTool: NSObject {
         style.alignment = .center
        
         /// 文本的frame
-        let textRect = CGRect(x: 0, y: 30, width: size.width, height: 20)
+        let textRect = CGRect(x: 0, y: size.height * 0.8, width: size.width, height: 20)
         
         // 定义不可变字典,存储段落的属性
         let textDic = [

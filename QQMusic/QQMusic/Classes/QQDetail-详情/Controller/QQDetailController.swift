@@ -37,6 +37,9 @@ class QQDetailController: UIViewController {
     /// 总时长
     @IBOutlet weak var totalTimeLabel: UILabel!
     
+    /// 分页指示器
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     
 // ===========================
 // MARK: - 更新 n 次
@@ -72,7 +75,11 @@ class QQDetailController: UIViewController {
     fileprivate lazy var lrcVC: QQLrcTableVC = {
         let lrcVC = QQLrcTableVC()
         lrcVC.tableView.backgroundColor = .clear
+        lrcVC.tableView.frame = self.scrollView.bounds
         lrcVC.tableView.frame.origin.x = screenW        // 使得歌词View默认在屏幕之外
+        
+        lrcVC.sliderView.frame.origin.x = screenW
+        lrcVC.sliderView.frame.origin.y = self.scrollView.frame.size.height * 0.5
         return lrcVC
     }()
     
@@ -325,8 +332,8 @@ extension QQDetailController {
     /// 配置UI界面
     fileprivate func configUI() {
         
-        // 隐藏导航栏
-        navigationController?.isNavigationBarHidden = true
+        lrcVC.sliderView.isHidden = true                    // 默认隐藏滑动选歌词视图
+        navigationController?.isNavigationBarHidden = true  // 隐藏导航栏
         
         configScrollView()
         configRoundBackground()
@@ -337,8 +344,9 @@ extension QQDetailController {
     /// 配置ScrollView
     private func configScrollView() {
         
-        // 添加 歌词视图控制器 的 表格视图 到 scrollView 中
+        // 添加视图到ScrollView中
         scrollView.addSubview(lrcVC.tableView)
+        scrollView.addSubview(lrcVC.sliderView)
         
         // 设置scrollView相关属性
         scrollView.delegate = self
@@ -395,11 +403,13 @@ extension QQDetailController: UIScrollViewDelegate {
         
         /// 计算移动的比例
         let radio = 1 - offSetX / scrollView.frame.size.width
+        let page = offSetX / scrollView.frame.size.width  //分页指示器比例
         
         // 0.0 - 1.0
         RoundBackground.alpha = radio
         lrcLabel.alpha = radio
         HaloView.alpha = radio
+        pageControl.currentPage = Int(page)
     }
     
     /// 添加旋转动画

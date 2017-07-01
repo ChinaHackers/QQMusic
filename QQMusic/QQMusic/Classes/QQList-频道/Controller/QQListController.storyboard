@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List Controller-->
+        <!--音乐库-->
         <scene sceneID="GC5-Ow-GAc">
             <objects>
                 <viewController id="H2E-Xx-krL" customClass="QQListController" customModule="QQMusic" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,7 +29,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="i1o-0U-yVV"/>
+                    <navigationItem key="navigationItem" title="音乐库" id="i1o-0U-yVV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="tableView" destination="At1-ec-FDV" id="Nq3-Nb-LbX"/>

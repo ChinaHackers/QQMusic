@@ -60,6 +60,8 @@
 		6B16320B1F0158A7005B85E7 /* QQLrcLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16320A1F0158A7005B85E7 /* QQLrcLabel.swift */; };
 		6B16320E1F016637005B85E7 /* QQLrcCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B16320C1F016637005B85E7 /* QQLrcCell.swift */; };
 		6B16320F1F016637005B85E7 /* QQLrcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B16320D1F016637005B85E7 /* QQLrcCell.xib */; };
+		6B1826BA1F0818AC00B9BA6C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1826B81F0818AC00B9BA6C /* SliderView.swift */; };
+		6B1826BB1F0818AC00B9BA6C /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1826B91F0818AC00B9BA6C /* SliderView.xib */; };
 		6B38994C1EFEBBF5004F1937 /* QQMusicDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B38994B1EFEBBF5004F1937 /* QQMusicDataTool.swift */; };
 		6B3899521EFEC340004F1937 /* QQMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3899511EFEC340004F1937 /* QQMusicCell.xib */; };
 		6B3899541EFEC361004F1937 /* QQMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3899531EFEC361004F1937 /* QQMusicCell.swift */; };
@@ -171,6 +173,8 @@
 		6B16320A1F0158A7005B85E7 /* QQLrcLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLrcLabel.swift; sourceTree = "<group>"; };
 		6B16320C1F016637005B85E7 /* QQLrcCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLrcCell.swift; sourceTree = "<group>"; };
 		6B16320D1F016637005B85E7 /* QQLrcCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQLrcCell.xib; sourceTree = "<group>"; };
+		6B1826B81F0818AC00B9BA6C /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		6B1826B91F0818AC00B9BA6C /* SliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
 		6B38994B1EFEBBF5004F1937 /* QQMusicDataTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicDataTool.swift; sourceTree = "<group>"; };
 		6B3899511EFEC340004F1937 /* QQMusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQMusicCell.xib; sourceTree = "<group>"; };
 		6B3899531EFEC361004F1937 /* QQMusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicCell.swift; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 				6B16320A1F0158A7005B85E7 /* QQLrcLabel.swift */,
 				6B16320C1F016637005B85E7 /* QQLrcCell.swift */,
 				6B16320D1F016637005B85E7 /* QQLrcCell.xib */,
+				6B1826B81F0818AC00B9BA6C /* SliderView.swift */,
+				6B1826B91F0818AC00B9BA6C /* SliderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -657,6 +663,7 @@
 				6B7883E51F06A92200D1DA6F /* 谢容儿-其实我很在乎你-2013气氛拍手HipHop.mp3 in Resources */,
 				6B11A9C01EFEB42C00313D0E /* eason_icon@2x.jpg in Resources */,
 				6B7883E21F06A92200D1DA6F /* 躲避的爱.mp3 in Resources */,
+				6B1826BB1F0818AC00B9BA6C /* SliderView.xib in Resources */,
 				6B7883E71F06A92200D1DA6F /* StopGirl.mp3 in Resources */,
 				6BE49B921F04CE710046CE6E /* SeeYouAgain.lrc in Resources */,
 				6BE49B971F04CEA80046CE6E /* 北京北京-唐伯虎_icon.png in Resources */,
@@ -726,6 +733,7 @@
 				6B1632091F013B33005B85E7 /* QQLrcTableVC.swift in Sources */,
 				6BCA4D1D1EFF663E0012446B /* QQTimeTool.swift in Sources */,
 				6BE49B851F04CC830046CE6E /* miniPlayerCell.swift in Sources */,
+				6B1826BA1F0818AC00B9BA6C /* SliderView.swift in Sources */,
 				6B7A69E51F061B0B00220A9C /* QQImageTool.swift in Sources */,
 				6B45FCD21F00B33200F40627 /* UIView+Extension.swift in Sources */,
 				6B16320E1F016637005B85E7 /* QQLrcCell.swift in Sources */,

@@ -14,9 +14,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ggv-e2-oOR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zUO-Ze-IPb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zUO-Ze-IPb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.22745098039215686" green="0.75686274509803919" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

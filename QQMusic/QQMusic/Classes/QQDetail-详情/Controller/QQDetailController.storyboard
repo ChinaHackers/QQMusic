@@ -59,6 +59,14 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRT-hN-AmO">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="419"/>
                                     </scrollView>
+                                    <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="a8o-Xa-V3q">
+                                        <rect key="frame" x="168" y="382" width="39" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="39" id="J25-Fx-HnQ"/>
+                                            <constraint firstAttribute="height" constant="37" id="jm6-y7-Vto"/>
+                                        </constraints>
+                                        <color key="currentPageIndicatorTintColor" red="0.27450980390000002" green="0.71764705880000002" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </pageControl>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -66,11 +74,14 @@
                                     <constraint firstAttribute="bottom" secondItem="DRT-hN-AmO" secondAttribute="bottom" id="BYa-4n-q9u"/>
                                     <constraint firstAttribute="trailing" secondItem="DRT-hN-AmO" secondAttribute="trailing" id="FK1-0P-6UD"/>
                                     <constraint firstItem="iYX-OS-feN" firstAttribute="centerX" secondItem="ML9-e7-jrx" secondAttribute="centerX" id="GWG-3w-F3f"/>
+                                    <constraint firstAttribute="bottom" secondItem="a8o-Xa-V3q" secondAttribute="bottom" id="HjR-tr-IN7"/>
                                     <constraint firstItem="DRT-hN-AmO" firstAttribute="leading" secondItem="wVb-eV-GTc" secondAttribute="leading" id="Lxm-Gi-wRC"/>
                                     <constraint firstItem="ML9-e7-jrx" firstAttribute="centerX" secondItem="wVb-eV-GTc" secondAttribute="centerX" id="MgK-yH-oeJ"/>
                                     <constraint firstItem="DRT-hN-AmO" firstAttribute="top" secondItem="wVb-eV-GTc" secondAttribute="top" id="SLT-XG-qVC"/>
+                                    <constraint firstItem="a8o-Xa-V3q" firstAttribute="leading" secondItem="wVb-eV-GTc" secondAttribute="leading" constant="168" id="d6b-oA-m9O"/>
                                     <constraint firstItem="s1q-EK-fV8" firstAttribute="centerY" secondItem="wVb-eV-GTc" secondAttribute="centerY" id="dPZ-i0-1ys"/>
                                     <constraint firstItem="s1q-EK-fV8" firstAttribute="centerX" secondItem="wVb-eV-GTc" secondAttribute="centerX" id="djM-ZZ-6Ey"/>
+                                    <constraint firstAttribute="trailing" secondItem="a8o-Xa-V3q" secondAttribute="trailing" constant="168" id="ffd-2R-ey8"/>
                                     <constraint firstItem="iYX-OS-feN" firstAttribute="top" secondItem="ML9-e7-jrx" secondAttribute="bottom" constant="25" id="oX2-Ch-CxT"/>
                                     <constraint firstItem="ML9-e7-jrx" firstAttribute="centerY" secondItem="wVb-eV-GTc" secondAttribute="centerY" id="pkN-s2-XZ2"/>
                                 </constraints>
@@ -264,6 +275,7 @@
                         <outlet property="backImageView" destination="Ao6-bn-i1l" id="Pbt-WW-Wdd"/>
                         <outlet property="costTimeLabel" destination="sLl-29-yr7" id="YEs-ww-k8y"/>
                         <outlet property="lrcLabel" destination="iYX-OS-feN" id="RdP-hA-vFA"/>
+                        <outlet property="pageControl" destination="a8o-Xa-V3q" id="UjS-Bc-1mH"/>
                         <outlet property="playOrPauseBtn" destination="qmD-Yk-L21" id="fT4-6G-Z1E"/>
                         <outlet property="progressSlider" destination="kWR-pY-LGB" id="Bsw-vb-kDR"/>
                         <outlet property="scrollView" destination="DRT-hN-AmO" id="zo3-Vl-Ail"/>

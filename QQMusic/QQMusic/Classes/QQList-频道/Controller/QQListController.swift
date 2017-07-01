@@ -130,6 +130,14 @@ extension QQListController {
         view.addSubview(qqMusicTabBar)
         view.addSubview(songLView)
         configTableView()
+        configNavigationBar()
+    }
+    
+    /// 配置导航栏
+    private func configNavigationBar() {
+        
+        // 修改导航栏文字颜色
+        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
     }
     
     /// 配置UITableView
@@ -138,6 +146,7 @@ extension QQListController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundView = UIImageView(image: UIImage(named: "QQListBack.jpg"))
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: tabBarH, right: 0)
         tableView.register(UINib(nibName: "QQMusicCell", bundle: nil), forCellReuseIdentifier: identifier)
     }
 }
