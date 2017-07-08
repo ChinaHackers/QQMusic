@@ -38,9 +38,9 @@ class songListView: UIView {
     
     /// 配置UI
     private func configUI() {
-        
+        tab.allowsSelection = true      // 允许选中
         tab.dataSource = self
-//        tableView.delegate = self
+        tab.delegate = self
         tab.register(UINib(nibName: "ListViewCell", bundle: nil), forCellReuseIdentifier: songListCell)
     }
     
@@ -70,7 +70,7 @@ extension songListView {
 }
 
 // MARK: - UITableViewDataSource, UITableViewDelegate
-extension songListView: UITableViewDataSource {
+extension songListView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return musicModels.count
@@ -84,5 +84,13 @@ extension songListView: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: songListCell, for: indexPath) as! ListViewCell
         cell.qqmusicMo = model
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // 取出模型
+        let model = musicModels[indexPath.row]
+        print("正在播放\(model.name)")
+        print("点击\(indexPath.row)")
     }
 }

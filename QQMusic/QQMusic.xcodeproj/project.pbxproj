@@ -62,6 +62,7 @@
 		6B16320F1F016637005B85E7 /* QQLrcCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B16320D1F016637005B85E7 /* QQLrcCell.xib */; };
 		6B1826BA1F0818AC00B9BA6C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1826B81F0818AC00B9BA6C /* SliderView.swift */; };
 		6B1826BB1F0818AC00B9BA6C /* SliderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1826B91F0818AC00B9BA6C /* SliderView.xib */; };
+		6B2783E41F092297000B7D5F /* IMG_0375.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B2783E31F092297000B7D5F /* IMG_0375.png */; };
 		6B38994C1EFEBBF5004F1937 /* QQMusicDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B38994B1EFEBBF5004F1937 /* QQMusicDataTool.swift */; };
 		6B3899521EFEC340004F1937 /* QQMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B3899511EFEC340004F1937 /* QQMusicCell.xib */; };
 		6B3899541EFEC361004F1937 /* QQMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3899531EFEC361004F1937 /* QQMusicCell.swift */; };
@@ -175,6 +176,7 @@
 		6B16320D1F016637005B85E7 /* QQLrcCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQLrcCell.xib; sourceTree = "<group>"; };
 		6B1826B81F0818AC00B9BA6C /* SliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		6B1826B91F0818AC00B9BA6C /* SliderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderView.xib; sourceTree = "<group>"; };
+		6B2783E31F092297000B7D5F /* IMG_0375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0375.png; sourceTree = "<group>"; };
 		6B38994B1EFEBBF5004F1937 /* QQMusicDataTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicDataTool.swift; sourceTree = "<group>"; };
 		6B3899511EFEC340004F1937 /* QQMusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQMusicCell.xib; sourceTree = "<group>"; };
 		6B3899531EFEC361004F1937 /* QQMusicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQMusicCell.swift; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 				6B11A9AE1EFEB42C00313D0E /* MP3s */,
 				6B11A9B91EFEB42C00313D0E /* Musics.plist */,
 				6B11A9BA1EFEB42C00313D0E /* QQListBack.jpg */,
+				6B2783E31F092297000B7D5F /* IMG_0375.png */,
 			);
 			path = QQResources;
 			sourceTree = "<group>";
@@ -624,6 +627,7 @@
 			files = (
 				6BE49B881F04CC830046CE6E /* QQMusicTabbarView.xib in Resources */,
 				6B11A9D51EFEB42C00313D0E /* 255319.lrc in Resources */,
+				6B2783E41F092297000B7D5F /* IMG_0375.png in Resources */,
 				6B11A9D01EFEB42C00313D0E /* 10736444.lrc in Resources */,
 				6B11A9DD1EFEB42C00313D0E /* 12309111.mp3 in Resources */,
 				6B7884081F06AA6B00D1DA6F /* StopGirl_icon.jpg in Resources */,

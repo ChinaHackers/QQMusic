@@ -87,6 +87,8 @@ extension QQMusicTabbarView {
         // 设置 collectionView 视图滚动范围
 //        collectionView.contentSize = CGSize(width: CGFloat(240 * 5), height: tabBarH)
         
+        //是否开启 UICollectionViewCell的Pre-Fetching预加载
+        collectionView.isPrefetchingEnabled = true
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: "miniPlayerCell", bundle: nil), forCellWithReuseIdentifier: miniCell)
@@ -133,6 +135,8 @@ extension QQMusicTabbarView {
         }else {                // 暂停
             QQMusicOperationTool.shareInstance.pauseCurrentMusic()
             cell.pauseRotationAnimation()
+//            let taVC = QQLrcTableVC()
+//            sender.lcDrawDynamicCircle(progress: Float(taVC.progress))
         }
 
         
@@ -176,6 +180,27 @@ extension QQMusicTabbarView: UICollectionViewDelegate {
         print("点击了miniPlayer_ cell")
         
     }
+    
+    // MARK: 随着用户滚动Cell, 切换歌曲
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        // 获取滚动的偏移量
+        let offSetX = scrollView.contentOffset.x
+        
+        // 获取滚动的进度
+        let progress = Int(offSetX) / Int(scrollView.frame.size.width)
+        
+        print("========\(offSetX)======\(progress)")
+        
+        // 当前索引为: 当前进度
+        QQMusicOperationTool.shareInstance.currentPlayIndex = progress
+        
+        QQMusicOperationTool.shareInstance.playCurrentMusic()
+        
+        playOrPause.isSelected = true
+    }
+
+    
 }
 
 // MARK: - 绘制绿色静态圆
@@ -236,6 +261,10 @@ extension UIButton {
         
         DynamicCayer.strokeEnd = 0
         
+    }
+    
+    func lcDrawDynamicCircle(progress: Float) {
+        (self.layer.sublayers?.last as? CAShapeLayer)?.strokeEnd = CGFloat(progress)
     }
     
 }

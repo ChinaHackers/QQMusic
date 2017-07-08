@@ -126,18 +126,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDZ-kz-FPD">
-                                        <rect key="frame" x="325" y="8" width="40" height="15"/>
+                                        <rect key="frame" x="320" y="8" width="45" height="15"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="0U1-f3-FmA"/>
-                                            <constraint firstAttribute="width" constant="40" id="2yB-7U-ryK"/>
+                                            <constraint firstAttribute="width" constant="45" id="2yB-7U-ryK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kWR-pY-LGB">
-                                        <rect key="frame" x="63" y="0.0" width="254" height="31"/>
+                                        <rect key="frame" x="63" y="0.0" width="249" height="31"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Cfz-kK-Jtx"/>

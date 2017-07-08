@@ -18,20 +18,16 @@ class QQListController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - 懒加载
-    
     /// miniPlayer 视图
     fileprivate lazy var qqMusicTabBar: QQMusicTabbarView = {
-        
         let qqMusicTabBar = QQMusicTabbarView.Load_QQMusicTabbarView()
         qqMusicTabBar.frame = CGRect(x: 0, y: screenH - tabBarH, width: screenW, height: screenH - tabBarH)
         qqMusicTabBar.songList.addTarget(self, action: #selector(songListBtnClicked), for: .touchUpInside)
         return qqMusicTabBar
     }()
 
-    
-    /// 歌词列表视图
+    /// 歌曲列表视图
     fileprivate lazy var songLView: songListView = {
-        
         let songLView = songListView.Load_songListView()
         songLView.frame = CGRect(x: 0, y: screenH, width: screenW, height: 500)
         songLView.closeBtn.addTarget(self, action: #selector(closeBtnClicked), for: .touchUpInside)
@@ -43,7 +39,6 @@ class QQListController: UIViewController {
         return songLView
     }()
     
-
     /// 模型属性
     fileprivate var musicModels: [QQMusicModel] = [QQMusicModel]() {
         // 监听模型改变
@@ -145,7 +140,7 @@ extension QQListController {
         tableView.rowHeight = 60
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.backgroundView = UIImageView(image: UIImage(named: "QQListBack.jpg"))
+        tableView.backgroundView = UIImageView(image: UIImage(named: "IMG_0375"))
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: tabBarH, right: 0)
         tableView.register(UINib(nibName: "QQMusicCell", bundle: nil), forCellReuseIdentifier: identifier)
     }
